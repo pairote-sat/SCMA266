@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Tutorials | SCMA266 Theory of Interest</title>
+  <meta name="description" content="Chapter 3 Tutorials | SCMA266 Theory of Interest" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Tutorials | SCMA266 Theory of Interest" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Tutorials | SCMA266 Theory of Interest" />
+  
+  
+  
+
+<meta name="author" content="Pairote Satiracoo" />
+
+
+<meta name="date" content="2024-11-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="bonds-and-inflation.html"/>
+<link rel="next" href="solutions-to-tutorials.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">SCMA266 Theory of Interest</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Cashflows, Interest and the Time Value of Money</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#introduction-to-financial-modelling"><i class="fa fa-check"></i><b>1.1</b> Introduction to Financial Modelling</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#cashflows"><i class="fa fa-check"></i><b>1.2</b> Cashflows</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#interest-and-the-time-value-of-money"><i class="fa fa-check"></i><b>1.3</b> Interest and the Time Value of Money</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#simple-interest"><i class="fa fa-check"></i><b>1.3.1</b> Simple interest</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#compound-interest"><i class="fa fa-check"></i><b>1.3.2</b> Compound interest</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#frequency-of-compounding"><i class="fa fa-check"></i><b>1.4</b> Frequency of Compounding</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#effective-rate-of-interest"><i class="fa fa-check"></i><b>1.4.1</b> Effective rate of interest</a></li>
+<li class="chapter" data-level="1.4.2" data-path="index.html"><a href="index.html#compounding-over-any-number-of-time-units"><i class="fa fa-check"></i><b>1.4.2</b> Compounding over any number of time units</a></li>
+<li class="chapter" data-level="1.4.3" data-path="index.html"><a href="index.html#changing-the-time-period-of-the-effective-rates-of-interest"><i class="fa fa-check"></i><b>1.4.3</b> Changing the time period of the effective rates of interest</a></li>
+<li class="chapter" data-level="1.4.4" data-path="index.html"><a href="index.html#non-constant-interest-rates"><i class="fa fa-check"></i><b>1.4.4</b> Non-constant interest rates</a></li>
+<li class="chapter" data-level="1.4.5" data-path="index.html"><a href="index.html#accumulation-factors"><i class="fa fa-check"></i><b>1.4.5</b> Accumulation factors</a></li>
+<li class="chapter" data-level="1.4.6" data-path="index.html"><a href="index.html#present-values-and-discount-factors"><i class="fa fa-check"></i><b>1.4.6</b> Present values and discount factors</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#cashflows-and-annuities"><i class="fa fa-check"></i><b>1.5</b> Cashflows and Annuities</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="index.html"><a href="index.html#level-annuities-certain"><i class="fa fa-check"></i><b>1.5.1</b> Level Annuities certain</a></li>
+<li class="chapter" data-level="1.5.2" data-path="index.html"><a href="index.html#level-annuities-due"><i class="fa fa-check"></i><b>1.5.2</b> Level Annuities Due</a></li>
+<li class="chapter" data-level="1.5.3" data-path="index.html"><a href="index.html#deferred-annuities"><i class="fa fa-check"></i><b>1.5.3</b> Deferred annuities</a></li>
+<li class="chapter" data-level="1.5.4" data-path="index.html"><a href="index.html#increasing-annuities"><i class="fa fa-check"></i><b>1.5.4</b> Increasing annuities</a></li>
+<li class="chapter" data-level="1.5.5" data-path="index.html"><a href="index.html#compound-increasing-annuities"><i class="fa fa-check"></i><b>1.5.5</b> Compound increasing annuities</a></li>
+<li class="chapter" data-level="1.5.6" data-path="index.html"><a href="index.html#annuities-payable-more-than-once-per-time-unit"><i class="fa fa-check"></i><b>1.5.6</b> Annuities payable more than once per time unit</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#nominal-rates-of-interest"><i class="fa fa-check"></i><b>1.6</b> Nominal Rates of Interest</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="index.html"><a href="index.html#nominal-rates-of-discount"><i class="fa fa-check"></i><b>1.6.1</b> Nominal Rates of Discount</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#principle-of-equivalence-yields-and-equation-of-value"><i class="fa fa-check"></i><b>1.7</b> Principle of Equivalence, Yields and Equation of Value</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="index.html"><a href="index.html#equation-of-value-and-yields"><i class="fa fa-check"></i><b>1.7.1</b> Equation of value and yields</a></li>
+<li class="chapter" data-level="1.7.2" data-path="index.html"><a href="index.html#the-method-to-estimate-the-yield"><i class="fa fa-check"></i><b>1.7.2</b> The method to estimate the yield</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#loan-schedules"><i class="fa fa-check"></i><b>1.8</b> Loan schedules</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#repay-as-late-as-possible"><i class="fa fa-check"></i>Repay as late as possible:</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#repay-interest-only-during-the-term-and-repay-the-capital-at-the-end-of-the-term"><i class="fa fa-check"></i>Repay interest only during the term and repay the capital at the end of the term:</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#repay-loan-by-regular-instalments-of-interest-and-capital-throughout-term-of-loan"><i class="fa fa-check"></i>Repay loan by regular instalments of interest and capital throughout term of loan:</a></li>
+<li class="chapter" data-level="1.8.1" data-path="index.html"><a href="index.html#the-loan-schedule"><i class="fa fa-check"></i><b>1.8.1</b> The loan schedule</a></li>
+<li class="chapter" data-level="1.8.2" data-path="index.html"><a href="index.html#changing-the-term-of-a-loan"><i class="fa fa-check"></i><b>1.8.2</b> Changing the term of a loan</a></li>
+<li class="chapter" data-level="1.8.3" data-path="index.html"><a href="index.html#changing-the-interest-rate"><i class="fa fa-check"></i><b>1.8.3</b> Changing the interest rate</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html"><i class="fa fa-check"></i><b>2</b> Bonds and Inflation</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#introduction-to-thai-financial-system"><i class="fa fa-check"></i><b>2.1</b> Introduction to Thai Financial System</a></li>
+<li class="chapter" data-level="2.2" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#bonds"><i class="fa fa-check"></i><b>2.2</b> Bonds</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#characteristics-of-bonds"><i class="fa fa-check"></i><b>2.2.1</b> Characteristics of Bonds</a></li>
+<li class="chapter" data-level="2.2.2" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#examples-of-bonds"><i class="fa fa-check"></i><b>2.2.2</b> Examples of Bonds</a></li>
+<li class="chapter" data-level="2.2.3" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#bond-prices"><i class="fa fa-check"></i><b>2.2.3</b> Bond prices</a></li>
+<li class="chapter" data-level="2.2.4" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#no-tax"><i class="fa fa-check"></i><b>2.2.4</b> No tax</a></li>
+<li class="chapter" data-level="2.2.5" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#income-tax"><i class="fa fa-check"></i><b>2.2.5</b> Income tax</a></li>
+<li class="chapter" data-level="2.2.6" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#capital-gains-tax-cgt"><i class="fa fa-check"></i><b>2.2.6</b> Capital gains tax (CGT)</a></li>
+<li class="chapter" data-level="2.2.7" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#capital-gains-test"><i class="fa fa-check"></i><b>2.2.7</b> Capital Gains Test</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#inflation"><i class="fa fa-check"></i><b>2.3</b> Inflation</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#real-rates-of-interest"><i class="fa fa-check"></i><b>2.3.1</b> Real rates of interest</a></li>
+<li class="chapter" data-level="2.3.2" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#real-yields"><i class="fa fa-check"></i><b>2.3.2</b> Real yields</a></li>
+<li class="chapter" data-level="2.3.3" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#calculating-real-yields-given-constant-inflation-assumptions"><i class="fa fa-check"></i><b>2.3.3</b> Calculating real yields given constant inflation assumptions</a></li>
+<li class="chapter" data-level="2.3.4" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#index-linked-securities"><i class="fa fa-check"></i><b>2.3.4</b> Index-linked securities</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tutorials.html"><a href="tutorials.html"><i class="fa fa-check"></i><b>3</b> Tutorials</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="tutorials.html"><a href="tutorials.html#tutorial-1"><i class="fa fa-check"></i><b>3.1</b> Tutorial 1</a></li>
+<li class="chapter" data-level="3.2" data-path="tutorials.html"><a href="tutorials.html#tutorial-2"><i class="fa fa-check"></i><b>3.2</b> Tutorial 2</a></li>
+<li class="chapter" data-level="3.3" data-path="tutorials.html"><a href="tutorials.html#tutorial-3"><i class="fa fa-check"></i><b>3.3</b> Tutorial 3</a></li>
+<li class="chapter" data-level="3.4" data-path="tutorials.html"><a href="tutorials.html#tutorial-4"><i class="fa fa-check"></i><b>3.4</b> Tutorial 4</a></li>
+<li class="chapter" data-level="3.5" data-path="tutorials.html"><a href="tutorials.html#tutorial-5"><i class="fa fa-check"></i><b>3.5</b> Tutorial 5</a></li>
+<li class="chapter" data-level="3.6" data-path="tutorials.html"><a href="tutorials.html#tutorial-6"><i class="fa fa-check"></i><b>3.6</b> Tutorial 6</a></li>
+<li class="chapter" data-level="3.7" data-path="tutorials.html"><a href="tutorials.html#tutorial-7"><i class="fa fa-check"></i><b>3.7</b> Tutorial 7</a></li>
+<li class="chapter" data-level="3.8" data-path="tutorials.html"><a href="tutorials.html#tutorial-8"><i class="fa fa-check"></i><b>3.8</b> Tutorial 8</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="solutions-to-tutorials.html"><a href="solutions-to-tutorials.html"><i class="fa fa-check"></i><b>4</b> Solutions to Tutorials</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="solutions-to-tutorials.html"><a href="solutions-to-tutorials.html#solutions-to-tutorial-1"><i class="fa fa-check"></i><b>4.1</b> Solutions to Tutorial 1</a></li>
+<li class="chapter" data-level="4.2" data-path="solutions-to-tutorials.html"><a href="solutions-to-tutorials.html#solutions-to-tutorial-2"><i class="fa fa-check"></i><b>4.2</b> Solutions to Tutorial 2</a></li>
+<li class="chapter" data-level="4.3" data-path="solutions-to-tutorials.html"><a href="solutions-to-tutorials.html#solutions-to-tutorial-3"><i class="fa fa-check"></i><b>4.3</b> Solutions to Tutorial 3</a></li>
+<li class="chapter" data-level="4.4" data-path="solutions-to-tutorials.html"><a href="solutions-to-tutorials.html#solutions-to-tutorial-4"><i class="fa fa-check"></i><b>4.4</b> Solutions to Tutorial 4</a></li>
+<li class="chapter" data-level="4.5" data-path="solutions-to-tutorials.html"><a href="solutions-to-tutorials.html#solutions-to-tutorial-5"><i class="fa fa-check"></i><b>4.5</b> Solutions to Tutorial 5</a></li>
+<li class="chapter" data-level="4.6" data-path="solutions-to-tutorials.html"><a href="solutions-to-tutorials.html#solutions-to-tutorial-6"><i class="fa fa-check"></i><b>4.6</b> Solutions to Tutorial 6</a></li>
+<li class="chapter" data-level="4.7" data-path="solutions-to-tutorials.html"><a href="solutions-to-tutorials.html#solutions-to-tutorial-7"><i class="fa fa-check"></i><b>4.7</b> Solutions to Tutorial 7</a></li>
+<li class="chapter" data-level="4.8" data-path="solutions-to-tutorials.html"><a href="solutions-to-tutorials.html#solutions-to-tutorial-8"><i class="fa fa-check"></i><b>4.8</b> Solutions to Tutorial 8</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">SCMA266 Theory of Interest</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="tutorials" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Tutorials<a href="tutorials.html#tutorials" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="tutorial-1" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Tutorial 1<a href="tutorials.html#tutorial-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the following accumulation:</p>
+<ol style="list-style-type: decimal">
+<li><p>Accumulate $5,000 for 4 years at 7.5% per annum effective.</p></li>
+<li><p>Accumulate $800 for 2.7 years at 3% per quarter-year effective.</p></li>
+<li><p>Accumulate $10,000 for 27 months at 4.25% per half-year
+effective.</p></li>
+</ol></li>
+<li><p>Calculate the present values on 1 January 2015 of the following
+payments at the given rates of interest:</p>
+<ol style="list-style-type: decimal">
+<li><p>$1,000 on 1 January 2016, at 7.5% per annum effective.</p></li>
+<li><p>$100 on 1 October 2016, at 3% per quarter-year effective.</p></li>
+<li><p>$10,000 on 1 April 2016, at 4.25% per half-year effective.</p></li>
+</ol></li>
+<li><ol style="list-style-type: decimal">
+<li><p>If the effective rate of interest is 4% per annum, calculate the
+effective rate of interest per month?</p></li>
+<li><p>If the effective rate of interest is 6.5% per half-year,
+calculate the effective rate of interest per quarter-year?</p></li>
+</ol></li>
+<li><p>The effective rate of interest per annum was 4% during 2015, 5%
+during 2016 and 6% thereafter.</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the accumulation of $500 from 1 January 2015 to 1
+January 2018.</p></li>
+<li><p>Calculate the accumulation of $2000 from 1 April 2015 to 1
+October 2017.</p></li>
+<li><p>Calculate the accumulation factor from 1 January 2015 to 1
+January 2018.</p></li>
+</ol></li>
+<li><p>You deposit $ 3000 to an account that earn 2.5% compounded
+annually. How much will you have in three years?</p></li>
+<li><p>A person borrows a sum of $5,000 and agrees to pay this back at the
+end of 1 year with interest calculated at an effective rate of 10%
+per annum. Calculate the amount to be repaid for the loan.</p></li>
+<li><p>You want to have $1000 in 2 years and $2000 in 4 years. How much
+should you deposit now into an account earning the effective rate of
+5.75% semiannually?</p></li>
+<li><p>Katy deposits 100 into a saving account which pays interest at <span class="math inline">\(i\)</span>
+<strong>per quarter</strong> effective.</p>
+<p>At the same time, Taylor deposits 500 into a different saving
+account which pays a simple interest at an annual rate of <span class="math inline">\(i\)</span>.</p>
+<p>During the last 3 months of the 4th year, they both earn the same
+amount of interest. Calculate <span class="math inline">\(i\)</span>.</p></li>
+<li><p>An ordinary annuity is a series of equal payments made at the end of
+consecutive periods over a fixed length of time. Draw a timeline for
+the following annuity having cashflow of 1 unit at the end of each
+of the next n time units.</p></li>
+<li><p>Draw a timeline to illustrate this insurance benefit: Whole Life
+Insurance - payable immediately on death - has following conditions:</p>
+<ul>
+<li><p>death benefit (sum insured) of 1</p></li>
+<li><p>payable immediately on the death</p></li>
+<li><p>of an individual currently aged x</p></li>
+<li><p>for death occurring any time in the future.</p></li>
+</ul></li>
+<li><p>(Excel) It is a good exercise to check whether the Excel worksheet
+you have developed so far for calculating the present value and
+future value can be applied to the questions in this Tutorial. What
+would you do to improve the Excel worksheet that can be applied to a
+more general scenario?</p></li>
+</ol>
+</div>
+<div id="tutorial-2" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Tutorial 2<a href="tutorials.html#tutorial-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>Starting at 1 January 2015, the effective rate of interest per annum
+was 3% per quarter-year for 9 months, 4% per half-year for 15 months
+and and 2% per month thereafter.</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the accumulation factor from 1 January 2015 to 1
+January 2018.</p></li>
+<li><p>Calculate the accumulation of $5,000 from 1 July 2015 to 1
+October 2017.</p></li>
+<li><p>Calculate the accumulation of $100 from 1 March 2016 to 1
+August 2018.</p></li>
+<li><p>Calculate the present value at 1 January 2015 of $ 25,000
+receivable on 1 July 2016.</p></li>
+<li><p>Calculate the present value at 1 April 2015 of $ 8,000
+receivable on 1 October 2017.</p></li>
+<li><p>Calculate the discount factor from 1 July 2015 to 1
+October 2016.</p></li>
+</ol></li>
+<li><p>The effective rate of interest is 7.25% per time unit. Cashflows are
+shown in the following time line.</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the accumulation at time time t = 4 units of these
+cashflows.</p></li>
+<li><p>Calculate the accumulation at time time t = 8 units of these
+cashflows.</p></li>
+<li><p>Calculate the present value at time time t = 0 units of these
+cashflows.</p></li>
+</ol></li>
+</ol>
+<p><img src="SCMA266Bookdownproj_files/figure-html/tikz-exam1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>The effective rate of interest is 6% per time unit. Cashflows are
+shown in the following time line.</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the accumulation at time time t = 5 units of these
+cashflows.</p></li>
+<li><p>Calculate the value at time time t = 2 units of these cashflows.</p></li>
+<li><p>Calculate the present value at time time t = 0 units of these
+cashflows.</p></li>
+</ol></li>
+</ol>
+<p><img src="SCMA266Bookdownproj_files/figure-html/tikz-exam2-1.png" width="672" style="display: block; margin: auto;" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li><p>The effective rate of interest per annum was 4% during 2015, 3% per
+half-year until 1 October 2017 and 1.5% per month thereafter.
+Cashflows are shown in the following time line.</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the accumulation on 1/1/2019 of these cashflows.</p></li>
+<li><p>Calculate the present value on 1/1/2015 of these cashflows.</p></li>
+<li><p>Calculate the value at time time 1/7/2017 of these cashflows.</p></li>
+</ol></li>
+</ol>
+<p><img src="SCMA266Bookdownproj_files/figure-html/tikz-exam3-1.png" width="672" style="display: block; margin: auto;" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li>(Excel) It is a good exercise to check whether the Excel worksheet
+you have developed so far for calculating the present value and
+future value can be applied to the questions in this Tutorial. What
+would you do to improve the Excel worksheet for a more general
+scenario?</li>
+</ol>
+</div>
+<div id="tutorial-3" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Tutorial 3<a href="tutorials.html#tutorial-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the present value now of an annuity payable monthly in
+advance. The annual amount of the annuity will be $ 2,400 for the
+first 10 years and $ 3,600 for the next 15 years, after which
+payment will cease. Assume that the effective rate of interest is 2%
+per annum.</p></li>
+<li><p>Assume that the effective rate of interest will be 3% for 5 years
+from now, 4% for the next 5 years and 5% thereafter. Calculate the
+following values:</p>
+<ol style="list-style-type: decimal">
+<li><p>The present value of an annuity of $ 1,000 per annum, payable
+in arrear for 15 years.</p></li>
+<li><p>The present value of an annuity due of $ 500 per annum, payable
+at the beginning of the year for 20 years.</p></li>
+<li><p>The accumulation value of an increasing annuity payable yearly
+in arrear for 30 years. The first annual payment is $ 100, and
+payments will be increase by $ 100 each year.</p></li>
+<li><p>The accumulation value of an increasing annuity payable yearly
+in advance for 18 years. The first annual payment is $ 1,000,
+and payments will be increase by 2% each year (compound).</p></li>
+<li><p>The present value of an annuity of $ 200, payable in arrear for
+10 years and deferred for 3 years.</p></li>
+</ol></li>
+<li><p>You borrow $ 240,000 from a bank to be repaid by the end of 5
+years. Assume that the interest rate is 4% per annum. Consider the
+following four possible options for the loan to be repaid.</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the amount of the repayments to repay if you choose to
+repay the loan as late as possible.</p></li>
+<li><p>You may choose to repay interest only during the 5 years term of
+loan and repay the capital at the end of the term. Calculate
+interest to be repaid and draw the timeline to illustrate the
+cashflows for the repayment of the loan.</p></li>
+<li><p>Calculate the amount X of level instalments to repay the loan
+which will be paid at the end of each year for 5 years and draw
+the timeline to illustrate the cashflows for the repayment of
+the loan.</p></li>
+<li><p>Calculate the amount Y of level instalments to repay the loan
+which will be paid at the end of each month for 5 years and draw
+the timeline to illustrate the cashflows for the repayment of
+the loan. <strong>Instalment</strong> is a sum of money due as one of several
+equal payments for something, spread over an agreed period of
+time.</p></li>
+</ol></li>
+<li><p>A person now age 30 has received a pension from a company. When he
+retires at age 60, he will be paid on each birthday from the 60 to
+the 85th inclusive. The first annual payment will be half of his
+salary when he retires, and payments will then increase by 2%
+compounding each year. Currently, he receive a salary of $ 20,000
+and will increase by 3% each year compounding in line with
+inflation. Assume that the effective rate of interest will be 4% for
+the next 20 years and 5% thereafter. Calculate the present value now
+of this pension.</p></li>
+<li><p>(Excel) Use Excel worksheet you have developed so far to calculate
+the results from the questions in this Tutorial.</p></li>
+</ol>
+</div>
+<div id="tutorial-4" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Tutorial 4<a href="tutorials.html#tutorial-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>Show that the following series of cashflows are equivalent given
+that an interest rate is 4% per annum effective.</p>
+<ol style="list-style-type: decimal">
+<li><p>One single payment of amount 14,802.44 at year 10.</p></li>
+<li><p>a level annuity of 400 payable yearly in arrear for the next 10
+years plus a lump sum of 10,000.</p></li>
+<li><p>a level annuity of 1,232.91 payable yearly in arrear for the
+next 10 years.</p></li>
+</ol></li>
+<li><p>You invest in a project which requires you to pay 2,000 and receive
+back 300 at the end of each of the next 8 years. Calculate the yield
+of this investment. ANS = 4.2394551%</p></li>
+<li><p>You pay a price of 5,000 for an investment that will repay you 600
+per annum payable half-yearly in arrear for the next 12 years.
+Calculate the yield of this investment. ANS = 3.1491266%</p></li>
+<li><p>An investor pays 100,000 in order to receive 20,000 back at the end
+of the first 3 years and 25,000 back at the end in the next 4 years.
+Calculate the yield of this investment. ANS = 12.6209232%</p></li>
+<li><p>You invest in a project which requires you to pay 500,000 at the
+start of each of the calendar years 2018, 2019 and 2020. The project
+is expected to return profits of 400,000 for 6 years a the end of
+each calendar year 2024 to 2029 inclusive. Calculate the yield of
+this investment. ANS = 5.7285486%</p></li>
+<li><p>(Modified from CT1 2012 IFoA Exam)</p>
+<p>An investor is considering two projects, Project A and Project B.
+Project A involves the investment of 2,000,000 in a retail outlet.
+Rent is received quarterly in arrear for 25 years, at an initial
+rate of 100,000 per annum. It is assumed that the rent will increase
+at a rate of 5% per annum compound, but with increases taking place
+every five years. Maintenance and other expenses are incurred
+quarterly in arrear, at a rate of 12,000 per annum. The retail
+outlet reverts to its original owner after 25 years for no payment.</p>
+<p>Project B involves the purchase of an office building for 1,000,000.
+The rent is to be received quarterly in advance at an initial rate
+of 85,000 per annum. It is assumed that the rent will increase to
+90,000 per annum after 20 years. There are no maintenance or other
+expenses. After 25 years the property reverts to its original owner
+for no payment.</p>
+<p>Calculate the annual effective internal rate of return for both
+Projects A and B. Which project is preferable?</p></li>
+<li><p>(Excel) Use Excel worksheet you have developed to calculate the
+results from the questions in this Tutorial.</p></li>
+</ol>
+</div>
+<div id="tutorial-5" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Tutorial 5<a href="tutorials.html#tutorial-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>You borrow 30,000 for a term of 6 months to be repaid in arrear by
+level monthly instalments. The rate of interest will be 4% pa
+effective.</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the monthly repayment.</p></li>
+<li><p>Construct the complete loan schedule</p></li>
+</ol></li>
+<li><p>A loan of 800,000 is repayable by equal monthly repayments for 10
+years, with interest rate payable at 6.5% pa effective.</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the amount of each monthly payment.</p></li>
+<li><p>Calculate the interest and capital contents of the 96th
+repayment.</p></li>
+</ol></li>
+<li><ol style="list-style-type: decimal">
+<li><p>An investor takes out a loan of 100,000 from a bank to be repaid
+by level annual instalments in arrear over 12 years where the
+bank charges an effective annual rate of interest of 7%.
+Immediately after the 6th repayment has been made, the investor
+may</p>
+<ol style="list-style-type: decimal">
+<li><p>extend the term of the loan by extra 2 year, or</p></li>
+<li><p>miss the next two repayments.</p></li>
+</ol>
+<p>Calculate the revised repayment amount in each case.</p></li>
+<li><p>Suppose the bank allows the
+investor to miss the next two repayments but the capital
+outstanding will be charged interest at 10% pa effective while
+the investor is not making repayments. Calculate the revised
+repayment.</p></li>
+<li><p>Suppose in Question 3.2 that the investor will miss the next two
+repayment and extend the term of the loan by extra 4 years.
+Calculate the revised repayment.</p></li>
+</ol></li>
+<li><p>An investor borrows 50,000 for a term of 12 years. The rate of
+interest will be 4% pa effective for the first 6 years and 5% pa
+effective thereafter. The loan will be repaid level annual
+repayments for the first 6 years, and then increasing to twice the
+origin level for the last 6 years. Calculate the annual repayment.</p></li>
+<li><p>An investor borrows 40,000 for a term of 10 years. The rate of
+interest will be 6.5% pa effective The loan will be repaid level
+annual repayments, increasing at 2% per annum.</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the first annual repayment.</p></li>
+<li><p>Calculate the capital outstanding after the 7th repayment is
+made.</p></li>
+<li><p>Calculate the interest content of the 8th repayment.</p></li>
+</ol></li>
+<li><p>(Excel) Suppose you borrow <span class="math inline">\(L\)</span> from a bank to be repaid by the end
+of <span class="math inline">\(n\)</span> years at an interest rate of <span class="math inline">\(i\%\)</span> per annum effective. If
+you agree to repay the loan and the interest in equal annual
+instalments throughout term of loan and the first payment is made at
+the end of the first year.</p>
+<p>Create a model to produce a loan amortisation (or loan schedule)
+table. Make the interest rate, loan life, initial loan, and other
+necessary variables input variables. The loan amortisation table
+should include the following columns:</p>
+<ul>
+<li><p>The year-beginning balance</p></li>
+<li><p>The annual repayment</p></li>
+<li><p>Interest Component</p></li>
+<li><p>Capital content</p></li>
+<li><p>Capital outstanding (the year-end balance)</p></li>
+</ul></li>
+</ol>
+</div>
+<div id="tutorial-6" class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> Tutorial 6<a href="tutorials.html#tutorial-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>A company issues a bond of nominal amount 10,000 with a term of 5
+years and a coupon of 6% convertible semiannually, to be redeemed at
+110%. Calculate the price of the bond to give a redemption yield of
+8% pa effective to an investor who pays no tax.</p></li>
+<li><p>A 10-year bond of nominal amount 1,000 paying a half-yearly coupon of
+10% per annum and redeemable at par. Calculate the price of this
+bond to give a redemption yield of 7% per annum effective after
+taxes to</p>
+<ol style="list-style-type: decimal">
+<li><p>an investor who pays no taxes.</p></li>
+<li><p>an investor who is subject to income tax at 15% but no CGT.</p></li>
+<li><p>an investor who is subject to
+income tax at 15% and CGT at 20%.</p></li>
+<li><p>If the investor question 2.3 would like to secure a redemption yield of 9%
+pa, calculate the price for the bond.</p></li>
+</ol></li>
+<li><p>An investor who pays income tax at 20%, but no CGT buys a 15-year
+bond to be redeemed at 105%, bearing semi-annual coupons of 10% pa.</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the price per 100 THB nominal to give a yield of 9% pa
+effective.</p></li>
+<li><p>Just after the 20th coupon payment, the income tax rate changes
+to 15%. If the investor holds the bond to redemption, calculate
+the realised yield on the whole transaction.</p></li>
+</ol></li>
+<li><p>A 15-bond of a nominal amount of 10,000 THB, bearing semi-annual coupons
+of 6% pa, to be redeemed at 98%.</p>
+<ol style="list-style-type: decimal">
+<li><p>An investor who is subject to income tax at 30% and CGT at 20%
+buys this bond for 9,000 THB. Calculate the net yield per annum for
+this transaction.</p></li>
+<li><p>If the investor wishes to obtain a net redemption yield of 7%
+pa, calculate the price that the investor should pay for the
+bond.</p></li>
+</ol></li>
+<li><p>A company issues a bond of nominal 100 THB amount with a term of 15 years
+and a coupon of 7% convertible semiannually, to be redeemed at par.</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the price of the bond if it is priced at issue to give
+a redemption yield of 8% pa effective to a non-tax paying
+investor.</p></li>
+<li><p>Investor A liable to income tax at 25% and capital gain tax at
+20% bought the bond on the issue date. Just after the 15th
+coupon payment, the investor A sold the bond to Investor B. The
+investor B, subject to income tax at 30% and capital gain tax at
+30% paid the price that gives a net redemption yield of 6.5%.
+Calculate the price that investor B paid.</p></li>
+<li><p>Calculate the realised yield for Investor A’s transaction.</p></li>
+</ol></li>
+</ol>
+</div>
+<div id="tutorial-7" class="section level2 hasAnchor" number="3.7">
+<h2><span class="header-section-number">3.7</span> Tutorial 7<a href="tutorials.html#tutorial-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>Consider a 5-year bond of a nominal amount of 100 THB , bearing annual
+coupons of 8% pa, to be redeemed at 110%. The bond was issued in
+July 2012 and its issue price was 100%. With reference to the CPI
+given in the lecture note, show that the real yield to an investor
+who is not subject to tax is 8.82%.</p></li>
+<li><p>A particular transaction will provide an effective rate of interest
+of 6% per annum. The period of the transaction is one year.</p>
+<ol style="list-style-type: decimal">
+<li><p>If the annual inflation rate over this one year period will be
+constant and equal to 2.5%, calculate the real yield on this
+transaction.</p></li>
+<li><p>Calculate the constant annual rate of inflation at which the
+investor will obtain a real yield on this transaction of at
+least 4.25% per annum.</p></li>
+<li><p>Calculate the real yield on this transaction if inflation will
+be 3% pa for the first nine months of the year and then 3.25%pa
+for the remaining three months.</p></li>
+</ol></li>
+<li><p>Consider a 3-year bond of a nominal amount of 100 THB, bearing annual
+coupons of 6% pa, to be redeemed at par. The bond was issued in 15
+January 2015 and its issue price was 95%.</p>
+<p>An investor who pays no tax purchased this bond on the issue date
+and held it until redemption.</p>
+<ol style="list-style-type: decimal">
+<li><p>Show that the yield obtained by this investor is approximately
+7.94%.</p></li>
+<li><p>Show that the real yield on this investment is approximately
+1.80% assuming the CPI values are given below:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Year</th>
+<th align="right">2015</th>
+<th align="right">2016</th>
+<th align="right">2017</th>
+<th align="right">2018</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">CPI on 15 January</td>
+<td align="right">100</td>
+<td align="right">103.3</td>
+<td align="right">111.0</td>
+<td align="right">119.5</td>
+</tr>
+</tbody>
+</table></li>
+</ol></li>
+<li><p>An investor who is not liable to tax had the choice of purchasing
+two investments made on 1 Apr 2018.</p>
+<ol style="list-style-type: upper-alpha">
+<li><p>A 10-year bond of a nominal of 100 THB, bearing a half-yearly coupon of
+9% per annum and redeemable at par. The issue price was at 110%.</p></li>
+<li><p>A 10-year index linked bond at a price of 135 THB per 100 THB nominal, bearing a
+half-yearly coupon of 4% per annum and redeemable at par. The
+CPI base figure for indexing is 100.24 and the CPI figure
+applicable to the next coupon (payable on 1 Oct 2018) is 145.68.
+(Here 145.68 is the CPI index on 1 Apr 2018).</p></li>
+</ol>
+<p>Assume that CPI will grow at a rate of 2.5% per annum from its
+latest known value of 145.68 on 1 Apr 2018.</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the real rate of return (yield) per annum earned on
+both investments A and B.</p></li>
+<li><p>Determine which of the two investments yielded the highest real
+rate of return per annum.</p></li>
+</ol></li>
+<li><p>An investor who is not liable to tax had the choice of purchasing
+two investments made on 15 Jan 2013.</p>
+<ol style="list-style-type: upper-alpha">
+<li><p>50,000 was placed in a 5-year term special saving account. The
+effective rate of interest was 2.5% p.a. for the first year, 3.5
+% p.a. for the second year, 4.5 % p.a. for the third year, 5.5%
+p.a. for the fourth year and 6.5% p.a. for the fifth year.</p></li>
+<li><p>50,000 was used to purchase an annuity payable annually in arrears
+for 5 years to yield 6% p.a. effective.</p></li>
+</ol>
+<p>Assume that the values of CPI are as follows:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Year</th>
+<th align="right">2013</th>
+<th align="right">2014</th>
+<th align="right">2015</th>
+<th align="right">2016</th>
+<th align="right">2017</th>
+<th align="right">2018</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">CPI on 15 January</td>
+<td align="right">100</td>
+<td align="right">104.17</td>
+<td align="right">110.17</td>
+<td align="right">111.08</td>
+<td align="right">112.67</td>
+<td align="right">114.83</td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the real rate of return (yield) per annum earned on
+both investments A and B.</p></li>
+<li><p>Determine which of the two investments yielded the highest real
+rate of return per annum.</p></li>
+</ol></li>
+</ol>
+</div>
+<div id="tutorial-8" class="section level2 hasAnchor" number="3.8">
+<h2><span class="header-section-number">3.8</span> Tutorial 8<a href="tutorials.html#tutorial-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>10,000 was placed in a 3-year term special saving account on 15
+Jan 2015. The effective rate of interest was 2.5% p.a. for the first
+year, 3.5 % p.a. for the second year, 4.5 % p.a. for the third year.
+Assume that the values of CPI are as follows:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Year</th>
+<th align="right">2015</th>
+<th align="right">2016</th>
+<th align="right">2017</th>
+<th align="right">2018</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">CPI on 15 January</td>
+<td align="right">100</td>
+<td align="right">104.08</td>
+<td align="right">106.67</td>
+<td align="right">108.83</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>What is the real rate of return (yield) per annum earned on this
+investment?</p>
+<ol style="list-style-type: upper-alpha">
+<li><p>0.618%</p></li>
+<li><p>0.629%</p></li>
+<li><p>0.724%</p></li>
+<li><p>0.762%</p></li>
+<li><p>none of the above</p></li>
+</ol></li>
+<li><p>A company’s cash position, measured in
+million of bahts, follows a generalised Wiener process with a drift
+rate of 0.25 per quarter and a variance rate of 9 per quarter. The
+initial cash position is 35. What is the expected cash position at
+the end of 6 months?</p>
+<ol style="list-style-type: upper-alpha">
+<li><p>35.25</p></li>
+<li><p>35.5</p></li>
+<li><p>35.75</p></li>
+<li><p>36</p></li>
+<li><p>none of the above</p></li>
+</ol></li>
+<li><p>Suppose that data on a stock price at
+the end of 63 consecutive trading days gives the sum of the daily
+returns <span class="math display">\[\sum_{i=1}^{62} \ln(S_i/S_{i-1}) = 0.25\]</span> and the sum of
+the daily returns squared
+<span class="math display">\[\sum_{i=1}^{62} \left( \ln(S_i/S_{i-1}) \right)^2= 0.0042.\]</span>
+Assume that there are 252 trading days per year. What is the
+estimated value of the stock price volatility per annum?</p>
+<ol style="list-style-type: upper-alpha">
+<li><p>9.28%</p></li>
+<li><p>10.72%</p></li>
+<li><p>11.42%</p></li>
+<li><p>12.37%</p></li>
+<li><p>none of the above</p></li>
+</ol></li>
+<li><p>What is the standard error (per annum) of the estimate obtained in Question 3?</p>
+<ol style="list-style-type: upper-alpha">
+<li><p>0.72%</p></li>
+<li><p>0.85%</p></li>
+<li><p>0.93%</p></li>
+<li><p>1.02%</p></li>
+<li><p>none of the above</p></li>
+</ol></li>
+<li><p>With the drift rate and the variance rate as given in the Question 2, What is the
+company’s initial cash position so that the company has a less than
+5% chance of a negative cash position by the end of 1 year? Note
+that <span class="math inline">\(\Pr( Z \le 1.645) = 0.95\)</span> for a standard normal random number
+<span class="math inline">\(Z\)</span>.</p>
+<ol style="list-style-type: upper-alpha">
+<li><p>6.48</p></li>
+<li><p>6.84</p></li>
+<li><p>7.29</p></li>
+<li><p>7.92</p></li>
+<li><p>none of the above</p></li>
+</ol></li>
+<li><p>Suppose that a stock price follow geometric Brownian motion with an
+initial price of 40 TBH, an expected return of 8% per annum and a
+volatility of 30% per annum. Using monthly time steps and the random
+samples from a normal distribution given in the table below, what is
+the simulated value of the stock price path at time 3 months?</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Period (n)</th>
+<th align="right">1</th>
+<th align="right">2</th>
+<th align="right">3</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Random sample from <span class="math inline">\(N(0,1)\)</span> for period <span class="math inline">\(n\)</span></td>
+<td align="right">0.62</td>
+<td align="right">1.34</td>
+<td align="right">-0.76</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: upper-alpha">
+<li><p>45.92</p></li>
+<li><p>46.78</p></li>
+<li><p>47.40</p></li>
+<li><p>48.80</p></li>
+<li><p>none of the above</p></li>
+</ol></li>
+<li><p>An investor who was not subject to tax purchased an index-linked
+bond issued on 15 January 2016 with a term of 2 years. The annual
+coupon rate was 2% p.a. payable half-yearly in arrears and the
+redemption rate was 100%. The coupons and redemption payments were
+adjusted with reference to the CPI value of 3 months before the
+payments were made.</p>
+<p>The value of the inflation index at particular dates are as follows:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Date</th>
+<th align="right">Oct 15</th>
+<th align="right">Jan 16</th>
+<th align="right">Apr 16</th>
+<th align="right">Jul 16</th>
+<th align="right">Oct 16</th>
+<th align="right">Jan 17</th>
+<th align="right">Apr 17</th>
+<th align="right">Jul 17</th>
+<th align="right">Oct 17</th>
+<th align="right">Jan 18</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">CPI (Date)</td>
+<td align="right">96</td>
+<td align="right">97</td>
+<td align="right">99</td>
+<td align="right">100</td>
+<td align="right">102</td>
+<td align="right">104</td>
+<td align="right">105</td>
+<td align="right">109</td>
+<td align="right">111</td>
+<td align="right">112</td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: decimal">
+<li><p>Write down the value of the base CPI figure.</p></li>
+<li><p>Calculate the actual payments per 100 THB nominal received by
+the investor. Clearly state the date on which each payment was
+received.</p></li>
+<li><p>Calculate the real payments per 100 THB nominal in terms of
+their purchasing power at 15 January 2016.</p></li>
+<li><p>Calculate the purchase price of the bond per 100 THB nominal if
+the investor obtained a <u><strong>real</strong></u> redemption yield of
+0.79% p.a. effective on the bond.</p></li>
+</ol></li>
+<li><p>Consider a stock that pays no dividends, provides an expected return
+of 10% per annum with continuous compounding and has a volatility of
+25% per annum. Assume that the stock price follows geometric
+Brownian motion and its current stock price is 40 THB.</p>
+<ol style="list-style-type: decimal">
+<li><p>Find the probability distribution of the logarithm of the stock
+price <span class="math inline">\(S_T\)</span> in 6 months’ time.</p></li>
+<li><p>Calculate the mean and the standard deviation of <span class="math inline">\(\ln S_T\)</span> in 6
+months’ time.</p></li>
+<li><p>Find the 95% confidence interval of <span class="math inline">\(S_T\)</span> in 6 months’ time.</p></li>
+</ol></li>
+</ol>
+<!-- ## Solutions to Tutorial 1 -->
+<!-- 1. The solutions to each question are as follows: -->
+<!--     1. $5000 (1.075)^4 = 6677.345703$  -->
+<!--     2. Let $i\%$ be the annual rate effective equivalent to $3\%$ per quarter-effective, $i = (1.03)^4 - 1$.  -->
+<!--     Hence, the accumulation is -->
+<!--     $$800(1+i)^{2.7} = 800(1.03)^{4\times2.7} = 1100.859802.$$ -->
+<!--     3. Let $j\%$ be the monthly rate effective equivalent to $4.25\%$ per half-year effective, $j = (1.0425)^{2/12} - 1$.  -->
+<!--     Hence, the accumulation is -->
+<!--     $$10000(1.0425)^{(2/12)\times27} = 12059.86056.$$ -->
+<!-- 2. The solutions to each question are as follows: -->
+<!--       1. $\frac{1000}{1.075} = 930.232558$. -->
+<!--       2. $\frac{100}{(1.03)^7} = 81.309151$. -->
+<!--       3. Let $j\%$ be the quarterly rate effective equivalent to         $4.25\%$ per half-year effective, $j = (1.0425)^{2/4} - 1$.  -->
+<!--       Hence, the present value is -->
+<!--       $$10000\times (1+j)^{-5} = 10000(1.0425)^{-(5/2)} = 9011.764643.$$ -->
+<!-- 3. The solutions to each question are as follows: -->
+<!--       1. 0.3274% -->
+<!--       2. 3.1988% -->
+<!-- 4. The solutions to each question are as follows: -->
+<!--       1. 500(1.04)(1.05)(1.06) =578.76 -->
+<!--       2. $2000(1.04)^{3/4}(1.05)(1.06)^{3/4} =2259.299$ -->
+<!--       3. (1.04)(1.05)(1.06) = 1.15752 -->
+<!-- 5. The account balance in 3 years is $3000(1.025)^{3} = 3230.67$. -->
+<!-- 6. The amount to be repaid for the loan is 5000(1.1) = 5500. -->
+<!-- 7. Let $X$ be the amount to be deposited now.  -->
+<!--       $$X = \frac{1000}{(1.0575)^4} + \frac{2000}{(1.0575)^8} = 2078.36. $$ -->
+<!-- 8. At time 3.75 years, Katy has a balance of $100(1+i)^{15}$. The interest on this balance over the next 3 months is  $100(1+i)^{15}\cdot i$. -->
+<!-- Taylor earns simple interest on the original amount which is equal to $500i\cdot\frac{3}{12}$. Therefore, we solve for $i$ from the following equation: -->
+<!-- $$ 100(1+i)^{15}\cdot i = 500i\cdot\frac{3}{12},$$ which gives $i = 0.014987.$ -->
+<!-- 9. The timeline for the following annuity having cashflow of 1 unit at the end of each of the next $n$ time units is given in the figure below: -->
+<!-- ```{tikz, tikz-sol1, fig.ext = 'png', cache=TRUE, echo = FALSE, fig.align="center"} -->
+<!-- \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt         -->
+<!-- \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1] -->
+<!-- %uncomment if require: \path (0,279); %set diagram left start at 0, and has height of 279 -->
+<!-- %Straight Lines [id:da8691686097400964]  -->
+<!-- \draw    (44.5,111) -- (617.5,110) ; -->
+<!-- \draw [shift={(619.5,110)}, rotate = 539.9] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ; -->
+<!-- %Straight Lines [id:da597257855042824]  -->
+<!-- \draw    (60,106) -- (60,117) ; -->
+<!-- %Straight Lines [id:da9474951160801843]  -->
+<!-- \draw    (181,106) -- (181,117) ; -->
+<!-- %Straight Lines [id:da6185331554915787]  -->
+<!-- \draw    (301,105) -- (301,116) ; -->
+<!-- %Straight Lines [id:da5682405407635602]  -->
+<!-- \draw    (570,106) -- (570,117) ; -->
+<!-- %Straight Lines [id:da5881588816774714]  -->
+<!-- \draw    (301,69) -- (300.53,98) ; -->
+<!-- \draw [shift={(300.5,100)}, rotate = 270.92] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ; -->
+<!-- %Straight Lines [id:da1927000421177052]  -->
+<!-- \draw    (181,69) -- (180.53,98) ; -->
+<!-- \draw [shift={(180.5,100)}, rotate = 270.92] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ; -->
+<!-- %Straight Lines [id:da43730719784498717]  -->
+<!-- \draw    (420,105) -- (420,116) ; -->
+<!-- %Straight Lines [id:da5347119577328068]  -->
+<!-- \draw    (421,69) -- (420.53,98) ; -->
+<!-- \draw [shift={(420.5,100)}, rotate = 270.92] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ; -->
+<!-- %Straight Lines [id:da21105992529208994]  -->
+<!-- \draw    (571,69) -- (570.53,98) ; -->
+<!-- \draw [shift={(570.5,100)}, rotate = 270.92] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ; -->
+<!-- % Text Node -->
+<!-- \draw (61,131.5) node   [align=left] {$\displaystyle 0$}; -->
+<!-- % Text Node -->
+<!-- \draw (180,132.5) node   [align=left] {$\displaystyle 1$}; -->
+<!-- % Text Node -->
+<!-- \draw (302,131.5) node   [align=left] {$\displaystyle 2$}; -->
+<!-- % Text Node -->
+<!-- \draw (571,129.5) node   [align=left] {$\displaystyle n$}; -->
+<!-- % Text Node -->
+<!-- \draw (601,90) node   [align=left] {Time}; -->
+<!-- % Text Node -->
+<!-- \draw (420,131.5) node   [align=left] {$\displaystyle 3$}; -->
+<!-- % Text Node -->
+<!-- \draw (495,130.5) node   [align=left] {$\displaystyle .\ .\ .$}; -->
+<!-- % Text Node -->
+<!-- \draw (182,54) node   [align=left] {$\displaystyle 1$}; -->
+<!-- % Text Node -->
+<!-- \draw (301,54) node   [align=left] {$\displaystyle 1$}; -->
+<!-- % Text Node -->
+<!-- \draw (421,54) node   [align=left] {$\displaystyle 1$}; -->
+<!-- % Text Node -->
+<!-- \draw (571,54) node   [align=left] {$\displaystyle 1$}; -->
+<!-- \end{tikzpicture}  -->
+<!-- ``` -->
+<!-- 10. (More details in the course "Life Contingencies I"). We need to define a random variable $T_x$ = the remaining future life time of a life aged $x$.  -->
+<!-- ```{tikz, tikz-sol2, fig.ext = 'png', cache=TRUE, echo = FALSE, fig.align="center"} -->
+<!-- \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt         -->
+<!-- \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1] -->
+<!-- %uncomment if require: \path (0,279); %set diagram left start at 0, and has height of 279 -->
+<!-- %Straight Lines [id:da8691686097400964]  -->
+<!-- \draw    (140.6,111.2) -- (494.8,110.4) ; -->
+<!-- \draw [shift={(496.8,110.4)}, rotate = 539.87] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ; -->
+<!-- %Straight Lines [id:da9474951160801843]  -->
+<!-- \draw    (181,106) -- (181,117) ; -->
+<!-- %Straight Lines [id:da43730719784498717]  -->
+<!-- \draw    (420,105) -- (420,116) ; -->
+<!-- %Straight Lines [id:da5347119577328068]  -->
+<!-- \draw    (421,69) -- (420.53,98) ; -->
+<!-- \draw [shift={(420.5,100)}, rotate = 270.92] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ; -->
+<!-- % Text Node -->
+<!-- \draw (180,132.5) node   [align=left] {$\displaystyle x$}; -->
+<!-- % Text Node -->
+<!-- \draw (420,131.5) node   [align=left] {$\displaystyle x\ +\ T_{x}$}; -->
+<!-- % Text Node -->
+<!-- \draw (182,54) node   [align=left] {$ $}; -->
+<!-- % Text Node -->
+<!-- \draw (421,54) node   [align=left] {$\displaystyle 1$}; -->
+<!-- \end{tikzpicture} -->
+<!-- ``` -->
+<!-- The quantity of interest is the present value of the death benefit assuming the interest rate of $i\%$ p.a. effective. It is also a random variable, -->
+<!--   $$PV = \frac{1}{(1+i)^{T_x}}.$$ It turns out that the premium rate of this whole life insurance is $E[PV]$, the expected value of the present value, $PV$.  -->
+<!-- ## Solutions to Tutorial 2 -->
+<!-- 1. The solutions to each question are as follows: -->
+<!--     1. $(1.03)^3(1.04)^{2.5} (1.02)^{12} = 1.528611$ -->
+<!--     2. $5000A(0.5,2.75) = 5000(1.03)(1.04)^{2.5} (1.02)^{9} = 6788.786068$ -->
+<!--     3. We first find the rate $j\%$ per month effective that is equivalent to the rate of $4\%$ per half-year effective. -->
+<!--     $$j = (1.04)^{1/6} - 1 = 0.00656.$$ -->
+<!--     The accumulated value is $100A(1+2/12, 3 + 7/12 ) = 100(1+j)^{10}(1.02)^{19} = 155.522118.$ -->
+<!--     4. $25000V(0,1.5) = \frac{25000}{(1.03)^3(1.04)^{1.5}} = 21571.39968.$ -->
+<!--     5. $8000V(0.25,2.75) = \frac{8000}{(1.03)^2(1.04)^{2.5}(1.02)^{9}} = 5720.455921.$ -->
+<!--     6. $V(0.5,1.75) = \frac{1}{(1.03)(1.04)^{2}} = 0.897627.$ -->
+<!-- 2.  The solutions to each question are as follows: -->
+<!--       1. With $i = 7.25\%$ per time period, $V(4) = 100 (1+i)^4 - 30(1+i)^3 - 30 (1+i)^2 + 100 (1+i) - 30 = 138.041762.$ -->
+<!--     2. $V(8) = V(4)\cdot (1+i)^4 = 182.641597.$ -->
+<!--     3. $PV(0) = V(4)\cdot (1+i)^{-4} = 104.332903.$ -->
+<!-- 3.  The solutions to each question are as follows: -->
+<!--       1. With $ = 6\%$ per time period, $V(5) = 5000 (1+i)^5 - 2000(1+i)^{3.75} - 1000 (1+i)^{2.25} + 4000 (1+i)^{1.5} - 500(1+i) = 6897.948585.$ -->
+<!--       2. $V(2) = V(5)(1+i)^{-3} = 5791.650645.$ -->
+<!--       3. $PV(0) = V(5)(1+i)^{-5} = 5154.548456.$ -->
+<!-- 4. The solutions to each question are as follows: -->
+<!--     1. $V(1/1/2019) = 100(1.04)(1.03)^{3.5}(1.015)^{15} - 30 (1.03)^{3.5}     (1.015)^{15}- 30 (1.03)^{1.5} (1.015)^{15} + 100 (1.015)^{12} - 30 = 152.955693.$ -->
+<!--     2. $PV(0)= V(1/1/2015) = \frac{152.955693}{(1.04)(1.03)^{3.5}(1.015)^{15}} =106.074596.$ -->
+<!--     3. $V(1/7/2017) = PV(0)(1.04)(1.03)^3 = 120.546998.$ -->
+<!-- ## Solutions to Tutorial 3 -->
+<!-- 1. Let $j$ be the effective rate per month equivalent to $i = 2$%. We have -->
+<!--   $$ j = (1.02)^{1/12}  - 1= 0.001652. $$ -->
+<!-- Hence,  -->
+<!-- $$ PV(0) = 200 \ddot{a}^{j}_{120} + 300 \ddot{a}^{j}_{180} \left( \frac{1}{1.02} \right)^{10} = 60148.03. $$ -->
+<!-- 2. The solutions to each question are as follows: -->
+<!--     1. The cashflows have been splitted into three periods: (a) from time point 0-5, (b) 5-10 and (c) time point 10 onward. -->
+<!--     $$PV(0) = 1000 ( a^{3\%}_{5} + 1.03^{-5} a^{4\%}_{5} +  1.03^{-5} 1.04^{-5} a^{5\%}_{5}) = 11489.49  $$ -->
+<!--     2. We have -->
+<!--     $$PV(0) = 500 ( \ddot{a}^{3\%}_{5} + 1.03^{-5} \ddot{a}^{4\%}_{5} +  1.03^{-5} 1.04^{-5} \ddot{a}^{5\%}_{10}) = 7229.67  $$ -->
+<!--     3. The accumuated value is -->
+<!--     $$100 (Is)^{3\%}_{5} (1.04)^5 (1.05)^{20} + \left[100 (Is)^{4\%}_{5} + 500 s^{4\%}_{5} \right] (1.05)^{20}  + \left[100 (Is)^{5\%}_{20} + 1000 s^{5\%}_{20} \right]= 78929.01  $$ -->
+<!--     4. Let $i_1 = 3\%, i_2 = 4\%$ and $i_3 = 5\%$. The accumuated value is given by -->
+<!--     $$\begin{aligned}  -->
+<!--     V(18) &= \left[1000(1+i_1)^5 + 1000(1.02)(1+i_1)^4 + 1000(1.02)^2(1+i_1)^3 + \ldots + 1000(1.02)^4(1+i_1)\right](1.04)^5(1.05)^8   \\ -->
+<!--     &+ \left[1000(1.02)^5(1+i_2)^5 + 1000(1.02)^6(1+i_2)^4 + 1000(1.02)^7(1+i_2)^3 + \ldots + 1000(1.02)^9(1+i_2)\right](1.05)^8   \\ -->
+<!--     &+ \left[1000(1.02)^{10}(1+i_3)^8 + 1000(1.02)^{11}(1+i_3)^7 + 1000(1.02)^{12}(1+i_3)^6 + \ldots + 1000(1.02)^{17}(1+i_3)\right]  \\ -->
+<!--     &= 1000(1.02)^5 \left[ \left(\frac{1+i_1}{1.02}\right)^5   + \left(\frac{1+i_1}{1.02}\right)^4 + \ldots + \left(\frac{1+i_1}{1.02}\right) \right](1.04)^5(1.05)^8 \\ -->
+<!--     &+ 1000(1.02)^{10} \left[ \left(\frac{1+i_2}{1.02}\right)^5   + \left(\frac{1+i_2}{1.02}\right)^4 + \ldots + \left(\frac{1+i_2}{1.02}\right) \right](1.05)^8 \\ -->
+<!--      &+ 1000(1.02)^{18} \left[ \left(\frac{1+i_3}{1.02}\right)^8   + \left(\frac{1+i_3}{1.02}\right)^7 + \ldots + \left(\frac{1+i_3}{1.02}\right) \right]  -->
+<!--     \end{aligned}$$ -->
+<!-- Let $1+j_1  = \frac{1+i_1}{1.02}$. Then, $j_1 = 0.009804$ and  -->
+<!-- $$ \left[ \left(\frac{1+i_1}{1.02}\right)^5   + \left(\frac{1+i_1}{1.02}\right)^4 + \ldots + \left(\frac{1+i_1}{1.02}\right) \right] = \frac{(1+j_1)^5 - 1}{j_1/(1+j_1)} = 5.148995.$$ -->
+<!-- Let $1+j_2  = \frac{1+i_2}{1.02}$. Then, $j_2 = 0.019608$ and  -->
+<!-- $$ \left[ \left(\frac{1+i_2}{1.02}\right)^5   + \left(\frac{1+i_2}{1.02}\right)^4 + \ldots + \left(\frac{1+i_2}{1.02}\right) \right] = 5.301921.$$ -->
+<!-- Let $1+j_3  = \frac{1+i_3}{1.02}$. Then, $j_3 = 0.029412$ and  -->
+<!-- $$ \left[ \left(\frac{1+i_3}{1.02}\right)^8   + \left(\frac{1+i_3}{1.02}\right)^7 + \ldots + \left(\frac{1+i_3}{1.02}\right) \right]  = 9.134790.$$ -->
+<!-- Therefore, $V(18) = 32814.45$. -->
+<!--     5. The present value is  -->
+<!-- $$\begin{aligned} -->
+<!--     PV(0) &= \left( \frac{200}{(1.03)^4} + \frac{200}{(1.03)^5}\right) + 200 a^{0.04}_5 (1.03)^{-5} + 200 a^{0.05}_{3} (1.03)^{-5} (1.04)^{-5} \\ -->
+<!--     &= 350.2192 + 768.0362 + 386.1574 = 1504.413 -->
+<!-- \end{aligned}$$ -->
+<!-- 3. The solutions to each question are as follows: -->
+<!--     1. $240000 (1.04)^5 = 291996.7$ -->
+<!--     2. The interest amounts are $0.04\times 240000 = 9600.$ -->
+<!--     3. By the Principle of Equivalence, we have -->
+<!--     $$ 240000 = X a^{0.04}_{5}. $$ -->
+<!--     This gives X = 53910.51. -->
+<!--     4. Level installments are payable monthly, which follows -->
+<!--     $$ 240000 = Y a^{j}_{60}, $$ -->
+<!--     where $j = (1.04)^{1/12} - 1$. This gives Y = 4412.23. -->
+<!-- 4. The person retires in 30 years, when his salary is expected to be  -->
+<!-- $20000 \times (1.03)^{30} = 48545.25.$  -->
+<!-- The first payment will be half of this which is equal to 24272.62. -->
+<!-- The present value at age 60 of his pension is -->
+<!-- $$  24272.62 \times \ddot{a}^{0.029412}_{26} = 449717.9$$ (the precise value is 449719.051954). -->
+<!-- Here we use $\frac{1.05}{1.02} = 1.029412$ and the annuity is paid from the 60th to the 85th birthday inclusive so there are 26 payments made in advance. -->
+<!-- Therefore, the present value of this at age 30 is -->
+<!-- $$ 449717.9 \times (1.05)^{-10} \times (1.04)^{-20} = 126002.9. $$ -->
+<!-- (the precise value is 126003.181173) -->
+<!-- ## Solutions to Tutorial 4 -->
+<!-- 1. To examine whether the cashflows are equivalent, we compare their present values. -->
+<!--     a. The present value of single payment of amount 14,802.44 at year 10 is  -->
+<!--   $$ PV(0) =  \frac{14,802.44}{1.04^{10}} = 10000.$$ -->
+<!--     b. The present value of the level annuity of 400 payable yearly in arrears for the next 10 years plus a lump sum of 10,000 is -->
+<!--   $$ PV(0) =  400 a^{0.04}_{10} +\frac{10000}{1.04^{10}} = 10000.$$ -->
+<!--     c. The present value of the level annuity of 1,232.91 payable yearly in arrears for the next 10 years. -->
+<!--   $$ PV(0) =  1,232.91 a^{0.04}_{10}  = 10000.$$ -->
+<!-- It follows that the values of these cashflows are the same, i.e. equivalent. -->
+<!-- 2. The annual yield of this investment $i$ is the solution of the equation of value: -->
+<!-- $$ f(i) = -2000(1+i)^8 +300 s^i_8 = 0. $$ -->
+<!-- If we solve using software, we get $i = 4.2394551%$. Instead of using software, you can also use linear interpolation to approximate the solution. -->
+<!-- 3. Working in time unit of half year, the equation of value is -->
+<!-- $$ f(i) = -5000(1+i)^{12 \times 2} + 300 s^i_{24} = 0. $$ -->
+<!-- The yield $i$ per half year is $i = 3.1491266\%$ and hence the annual yield is $6.397423\%.$ -->
+<!-- 4. The equation of value is -->
+<!-- $$ f(i) = -100(1+i)^{7} + 20 s^i_{3}(1+i)^{4}  + 25 s^i_{4} = 0. $$ -->
+<!-- The annual yield is $12.6209232\%.$ -->
+<!-- 5. You are suggested to draw the time line for these cashflows. The equation of value is -->
+<!-- $$ f(i) = -5 \ddot{s}^i_{3}(1+i)^{9}   + 4 s^i_{6} = 0. $$ -->
+<!-- The annual yield is $5.7285486\%.$ -->
+<!-- ## Solutions to Tutorial 5 -->
+<!-- 1. The monthly repayment can be calculated from this equation -->
+<!-- $$ X = \frac{30000}{a^j_6} = \frac{30000}{5.931847} = 5057.45,$$ -->
+<!-- where $j = (1.04)^{1/12} - 1 = 0.003274.$ -->
+<!-- The complete loan schedule is illustrated below: -->
+<!-- Time | Repayment | Interest Content | Capital Content | Capital Outstanding |  -->
+<!-- :-: | :-: | :-: | :-: | :-: | -->
+<!-- 0 | - | - | - |  30000 | -->
+<!-- 1 | $X$ | 98.21 | 4959.23 | 25040.77 |   -->
+<!-- 2 | $X$ | 81.98 | 4975.47 | 20065.30 |  -->
+<!-- 3 | $X$ | 65.69 | 4991.76 | 15073.54 |  -->
+<!-- 4 | $X$ | 49.35 | 5008.10 | 10065.44 | -->
+<!-- 5 | $X$ | 32.95 | 5024.50 | 5040.94 | -->
+<!-- 6 | $X$ | 16.50 | 5040.94 | 0 | -->
+<!-- 2. The monthly repayment can be calculated from this equation -->
+<!-- $$ X = \frac{800000}{a^j_{120}} = \frac{800000}{88.806749} = 9008.32,$$ -->
+<!-- where $j = (1.065)^{1/12} - 1 = 0.005262.$ -->
+<!-- The capital outstanding after 95th repayment (25 payments left) is -->
+<!-- $$ L_{95} = 9008.32 a^j_{25} = 210506.84.  $$ -->
+<!-- Hence, the interest content of the 96th repayment is -->
+<!-- $$ j \times L_{95} = 0.005262 \times 210506.84 = 1107.62.$$ -->
+<!-- The capital content of the 96th repayment is -->
+<!-- $$ X - 1107.62 = 7900.70. $$ -->
+<!-- 3.  -->
+<!--     1.  -->
+<!--     a. **Extending the term of the loan by extra 2 year:** The original repayment is -->
+<!-- $$ X = \frac{100000}{a^{0.07}_{12}} = \frac{100000}{7.942686} = 12590.20,$$ -->
+<!--     The capital outstanding after 6th repayment (6 payments left) is -->
+<!-- $$ L_{6} = X a^{0.07}_{6} = 60011.68.  $$ -->
+<!--     By extending the term of the loan by extra 2 year, the revised repayment $X'$ can be obtained (for 8 payments) from -->
+<!-- $$ X' = \frac{L_6}{a^{0.07}_{8}} = 10050.02$$ -->
+<!--     b. **Missing the next two repayments:** From the previous result, the capital outstanding after 6th repayment $L_6 = 60011.68$. Then in 2 years, with interest at $7\%$ per annum, this accumulates to  -->
+<!-- $$ L_6 \times (1.07)^2 = 68707.37. $$ -->
+<!-- This must now be repaind by only 4 annual repayments, so the new repayment $X''$ can be obtained from -->
+<!-- $$ X'' = \frac{68707.37}{a^{0.07}_{4}} = 20284.35.$$ -->
+<!--     2. The capital outstanding will accumulate (at $10\%$) to  -->
+<!-- $$ L_6 \times (1.1)^2 = 72614.14. $$ -->
+<!--     The new repayment amount $X'''$ is -->
+<!-- $$X''' = \frac{72614.14}{a^{0.07}_{4}} = 21437.73.$$ -->
+<!--     3. The new repayment amount will be  -->
+<!-- $$\frac{72614.14}{a^{0.07}_{8}} = 12160.53.$$ -->
+<!-- 4. You are suggested to draw the time line for these cashflows. Let $X$ be the level of repayment of the first 6 years ($2X$ will be repaid after this period for the last 6 years). It can be obtained from -->
+<!-- $$ 50000 = X(a^{0.04}_6 + 2 a^{0.05}_6 (1.04)^{-6}) = 3769.34.$$ -->
+<!-- 5.  -->
+<!--     1. Let $X$ be the first annual repayment. Then,   -->
+<!-- $$ 40000 = X(v + v^2(1.02) + v^3(1.02)^2 + \ldots + v^{10}(1.02)^9),$$ -->
+<!--     where $v = 1/(1.065).$ By rewriting the above equation, we have -->
+<!-- $$ 40000 = \frac{X}{1.02}(\frac{1.02}{1.065} + \left( \frac{1.02}{1.065} \right)^2 + \left( \frac{1.02}{1.065} \right)^3 + \ldots + \left( \frac{1.02}{1.065} \right)^{10}),$$ -->
+<!--     Let $i' =  \left( \frac{1.065}{1.02} -1 \right) = 0.044118.$ Hence, -->
+<!--   $$ 40000 = \frac{X}{1.02} \cdot a^{i'}_{10},$$ -->
+<!--     and $X = 5133.91.$ -->
+<!--     2. We will calculate the  capital outstanding after 7th repayment, $L_7$ (3 payments left). We first find the amount $X_8$of the 8th repayment,  -->
+<!-- $$X_8 = X(1.02)^7 = 5897.25.$$  -->
+<!--     So the capital outstanding after the 7th repayment is equal to the present value of the remaining 3 repayments (see the table below). -->
+<!-- Time |7 | 8 | 9 | 10 | -->
+<!-- :-: | :-: | :-: | :-: | :-: | -->
+<!-- Payment | $L_7 = ?$ | $X_8$ | $X_8 (1.02)$ | $X_8(1.02)^2$ | -->
+<!-- It follows that -->
+<!-- $$ -->
+<!-- \begin{aligned} L_7 &= X_8( v + v^2 + v^3) \\ -->
+<!-- &= \frac{X_8}{(1.02)} a^{i'}_3 \\ -->
+<!-- &= 15919.94, -->
+<!-- \end{aligned}$$ -->
+<!-- where $v$ and $i'$ are the same as above.  -->
+<!--   3. The interest content of the 8th repayment is -->
+<!-- $$ L_7 * i = 15919.94 \times 0.065 = 1034.80.$$ -->
+<!-- ## Solutions to Tutorial 6 -->
+<!-- 1. Using a time unit of half a year, the effective yield per half year is  -->
+<!-- $$j = (1.08)^{1/2} - 1 = 0.0392305.$$  -->
+<!-- Then, -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- P &= 300 a^j_{\angl{10}} + 11000 (\frac{1}{1.08})^{5} \\ -->
+<!-- &= 9929.03. -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- 2. Using a time unit of half a year, the effect yield per half year is  -->
+<!-- $$j = (1.07)^{1/2} - 1 = 0.034408.$$  -->
+<!--     1. Per 1000 nominal,  -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- P &= 50 a^j_{\angl{20}} + 1000 (\frac{1}{1.07})^{10} \\ -->
+<!-- &= 1222.79. -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!--     2. With an income tax rate at 15%, -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- P &= 42.5 a^j_{\angl{20}} + 1000 (\frac{1}{1.07})^{10} \\ -->
+<!-- &= 1115.62. -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!--     3. Since  -->
+<!-- $i^{(2)} = 2 \times j = 0.0688161 < (1 - t_1)\frac{D}{R} = (1 - 0.15)\frac{0.1}{1} = 0.085.$ -->
+<!-- Therefore, no capital gain tax (CGT) is payable. -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- P &= 42.5 a^j_{\angl{20}} + 1000 (\frac{1}{1.07})^{10} \\ -->
+<!-- &= 1115.62, -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- which is similar to the previous result. -->
+<!--     4. A redepmtion yield of  -->
+<!-- 9% p.a. is equivalent to a yield of  -->
+<!-- $$k = (1.09)^{1/2} - 1 = 0.0440307.$$  -->
+<!-- Since $k^{(2)} = 2 \times k = 0.0880613 < (1 - t_1)\frac{D}{R} = (1 - 0.15)\frac{0.1}{1} = 0.085.$ -->
+<!-- Therefore, no capital gain tax (CGT) is payable. -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- P &= 42.5 a^k_{\angl{20}} + (1000 - 0.2(1000-P)) (\frac{1}{1.09})^{10} \\ -->
+<!-- P &= 978.07 (< 1000)., -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- 3. The solutions are given below: -->
+<!-- 1. Using a time unit of half a year, the effect yield per half year is  -->
+<!-- $$j = (1.09)^{1/2} - 1 = 0.0440307.$$  -->
+<!-- Then, -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- P &= 4 a^j_{\angl{30}} + 105 (\frac{1}{1.09})^{15} \\ -->
+<!-- &= 94.73. -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- 2. In unit of half-year, the timeline of the transaction is shown in the table below: -->
+<!-- Time | 0 | 1 | 2 | $\cdots$   | 20 | 21 | $\cdots$   | 30 | -->
+<!-- :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | -->
+<!--   Payment  |-94.73 | 4 | 4 | $\cdots$  |  4  |  $4 + 0.25$ | $\cdots$ | $4 + 0.25 + 105$ |  -->
+<!-- The equation of value is -->
+<!-- $$ f(i) = -94.73 (1 + i)^{30} + 4 s^i_{\angl{30}} + 0.25 s^i_{\angl{10}} + 105 = 0.$$ -->
+<!-- The change  in the tax rate is quite small, so we do not expect a large change in the yield. -->
+<!-- By trial and error, in time unit of half a year, we have -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- f(0.044) &= 3.2373 \\ -->
+<!-- f(0.045) &= -2.6999. \\ -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- Therefore, the approximate of $i$ is  -->
+<!-- $$ i \approx 0.044545 \text{ per half-year,} $$ -->
+<!-- and hence 9.107% effective per year. -->
+<!-- 4. The solutions are as follows: -->
+<!--     1. CGT is payable because the price paid is 9000 < 9800 (the redemption amount) -->
+<!-- In unit of half-year, the equation of value is -->
+<!-- $$ f(i) = -9000 (1 + i)^{30} + 0.7 \times 300  s^i_{\angl{30}} + 9800 - 0.2(9800 - 9000) = 0.$$ -->
+<!-- By trial and error, we obtain -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- f(0.024) &= 380.741 \\ -->
+<!-- f(0.025) &= -18.541. \\ -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- Therefore, the approximate of $i$ is  -->
+<!-- $$ i \approx 0.024954 \text{ per half-year,} $$ -->
+<!-- and hence 5.05% effective per year. -->
+<!-- 2. The investor wishes to obtain a net yield of 7% p.a. effective, which is greater than 5.05%. The price paide will be less than 9000. So CGT is payable. -->
+<!-- By the principle of equivalence, -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- P &= 210 a^j_{\angl{30}} + (9800 - 0.2(9800 - P)) (\frac{1}{1.07})^{15},  -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- where $$j = (1.07)^{1/2} - 1 = 0.034408.$$  -->
+<!-- Solving for $P$ results in $P = 7258.90 \,( <9800)$. -->
+<!-- 5. The solutions are as follows: -->
+<!--     1. Using a time unit of half a year, the effect yield per half year is  -->
+<!-- $$j = (1.08)^{1/2} - 1 = 0.0392305.$$  -->
+<!-- Then, -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- P &= 3.5 a^j_{\angl{30}} + 100 (\frac{1}{1.08})^{15} \\ -->
+<!-- &= 92.62. -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!--     2. The bond sold to the investor B has 15 half-years to run. -->
+<!-- From B's tax position, -->
+<!-- $i^{(2)} = 2 \times (1.065^{1/2} - 1) = 0.0639767 < (1 - t_1)\frac{D}{R} = (1 - 0.3)\frac{7}{100} = 0.049.$ -->
+<!-- Therefore, capital gain tax (CGT) is payable. -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- P &= 2.45 a^j_{\angl{15}} + (100 - 0.3(100-P)) (\frac{1}{1.065})^{7.5}, \\ -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- where $$j = (1.065)^{1/2} - 1 = 0.0319884.$$  -->
+<!-- This results in $P = 89.16$. -->
+<!-- 3. Investor A sold the bond for less than price paid for the bond, so A does not pay CGT. -->
+<!-- In unit of half-year, the equation of value is -->
+<!-- $$ f(i) = -96.62 (1 + i)^{15} + 0.75 \times 3.5  s^i_{\angl{15}} + 89.16 = 0.$$ -->
+<!-- By trial and error, we obtain -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- f(0.026) &= 0.463 \\ -->
+<!-- f(0.027) &= -1.192. \\ -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- Therefore, the approximate of $i$ is  -->
+<!-- $$ i \approx 0.026280 \text{ per half-year,} $$ and hence -->
+<!-- approximately 5.325% p.a. effective. -->
+<!-- ## Solutions to Tutorial 7 -->
+<!-- 1. The timeline of the transaction is given in the following table. -->
+<!-- Time | 0 | 1 | 2 | 3 | 4 | 5  -->
+<!--   :-: | :-: | :-: | :-: | :-: | :-: | :-:  -->
+<!--   Year | 2012 | 2013 | 2014 | 2015 | 2016 | 2017 |  -->
+<!--   Cashflow | -100 | 8 | 8 | 8 | 8 | 18 + 100 -->
+<!--   CPI | 97.22 | 99.17 | 101.32 | 100.25 | 100.36 | 100.53 -->
+<!--   Real value of cashflow at $t = 0$ | -100 | $\frac{(8)(97.22)}{99.17}$ | $\frac{(8)(97.22)}{101.32}$ | $\frac{(8)(97.22)}{100.25}$ | $\frac{(8)(97.22)}{100.36}$  | $\frac{(8)(97.22)}{100.53}$ -->
+<!--   Real value of cashflow at $t = 0$   | -100 | = 7.84 | = 7.68 | = 7.76 | = 7.75 | = 114.11  -->
+<!--   The real yield $i'$ p.a. effective solve the equation of value as -->
+<!--     follows: -->
+<!--     $$f(i') = -100 + 7.84 v  + 7.68v^2 + 7.76v^3 + 7.75v^4 + 114.11v^5 = 0,$$ -->
+<!-- where $v = 1/(1 + i')$.     -->
+<!-- This gives $i' \approx 8.82\%$. -->
+<!-- 2. We know that when the annual rate of inflation is constant and equal to $q$, the real yield $i'$ and the monetary yield $i$ satisfies $$(1 +i) = ( 1 + q)(1+i').$$ -->
+<!--     1. Given  -->
+<!-- $i =0.06$ and $q = 0.025$, we have -->
+<!-- $$ i' = \frac{1.06}{1.025} - 1 = 0.0341463 = 3.4146341\%.$$ -->
+<!--     2. Given  -->
+<!-- $i =0.06$ and $i' = 0.0425$, we have -->
+<!-- $$ i' = \frac{1.06}{1.0425} - 1 = 0.0167866 = 1.6786571\%.$$ -->
+<!--     3. Given  -->
+<!-- $q = 0.03$ p.a. for 9 months and $q = 0.0325$ p.a. for the next 3 months,  -->
+<!-- $$ i' = \frac{1.06}{(1.03)^{9/12}(1.0325)^{3/12}} - 1 = 0.0285027 = 2.8502689\%.$$ -->
+<!-- 3. The timeline of the transaction is given in the following table. -->
+<!-- Time | 0 | 1 | 2 | 3 |  -->
+<!--   :-: | :-: | :-: | :-: | :-: |  -->
+<!--   Year | 2015 | 2016 | 2017 | 2018 | -->
+<!--   Cashflow | -95 | 6 | 6 | 106 | -->
+<!--   Real value of cashflow at $t = 0$ | -95 | 5.81 | 5.41 | 88.70 |  -->
+<!--     1. The equation of value is -->
+<!-- $$ f(i) = -95 + 6 a^i_{\angl{3}} + \frac{100}{(1+i)^3}  = 0.$$ -->
+<!-- This gives $i \approx 7.938\%$.  -->
+<!--     2. The real yield  -->
+<!-- $i'$ p.a. effective solve the equation of value as -->
+<!--     follows: -->
+<!--     $$f(i') = -95 + 5.81 v  + 5.41v^2 + 88.70v^3  = 0,$$ -->
+<!-- where $v = 1/(1 + i')$.     -->
+<!-- This gives $i' \approx 1.80\%$. -->
+<!-- 4. Question 4 is not examinable. -->
+<!-- Investment A: -->
+<!-- Date  | Real payment (monetary payment $\times \frac{\text{Q(APR 2018)}}{\text{Q(Date)}}$) -->
+<!--   :-: | :-: -->
+<!-- 1 APR 2018 | $-110$   -->
+<!-- 1 OCT 2018 | $4.5 \times \frac{\text{Q(APR 2018)}}{\text{Q(OCT 2018)} } = 4.5 \times \frac{\text{Q(APR 2018)}}{\text{Q(APR 2018)} \times (1.025)^{1/2}} = 4.5 \times \frac{1}{ (1.025)^{1/2}}$   -->
+<!-- 1 APR 2019 | $4.5 \times \frac{\text{Q(APR 2018)}}{\text{Q(APR 2019)} } = 4.5 \times \frac{\text{Q(APR 2018)}}{\text{Q(APR 2018)} \times (1.025)^{1}} = 4.5 \times \frac{1}{ (1.025)^{1}}$   $\vdots$ | $\vdots$ -->
+<!-- 1 APR 2028 | $(100 + 4.5) \times \frac{\text{Q(APR 2018)}}{\text{Q(APR 2028)} } = (100 + 4.5) \times \frac{\text{Q(APR 2018)}}{\text{Q(APR 2018)} \times (1.025)^{10}} = (100 + 4.5) \times \frac{1}{ (1.025)^{10}}$   -->
+<!-- The real yield $i'$ p.a. effective solve the equation of value as -->
+<!--     follows: -->
+<!--     $$f(i') = -110 +  4.5\left( \frac{1}{((1+i')(1.025))^{1/2}} + \frac{1}{((1+i')(1.025))^{1}}  + \cdots + \frac{1}{((1+i')(1.025))^{10}}\right)= 0,$$ -->
+<!-- Letting $(1+ j) = ((1+i')(1.025))^{1/2}$ gives the equation in terms of $j$ as follows: -->
+<!-- $$ f(j) = -110 + 4.5 a^j_{\angl{20}} + \frac{100}{(1+j)^{20}}  = 0.$$ -->
+<!-- By linear approximation, we obtain -->
+<!--   $$j \approx 0.0378$$  -->
+<!-- and the real yield per annum is  -->
+<!--   $$i' \approx 0.0507.$$  -->
+<!-- Investment B: -->
+<!-- The coupon payment is 2 THB increased with inflation, paid every 6 months and the redemption payment is 100 THB also increased with inflation. -->
+<!-- We first increase the payments with inflation approximately lagged by 6 months to see how much is acually paid, which gives nominal payments and then calculate their real values in terms of their purchasing power at 1 APR 2018. -->
+<!-- Date  | CPI (Date $-$ 6/12) | Nominal payment at Date | Real payment  -->
+<!--   :-: | :-: |  :-: | :-: -->
+<!-- 1 OCT 2018 | $145.68$ | $2 \times \frac{145.68}{100.24}$ |  $2 \times \frac{145.68}{100.24} \frac{\text{Q(APR 2018)}}{\text{Q(OCT 2018)} } = 2 \times \frac{145.68}{100.24} \times \frac{1}{ (1.025)^{1/2}}$ -->
+<!-- 1 APR 2019 | $145.68 \times 1.025^{1/2}$ | $2 \times \frac{145.68  \times 1.025^{1/2}}{100.24}$ |  $2 \times \frac{145.68  \times 1.025^{1/2}}{100.24} \frac{\text{Q(APR 2018)}}{\text{Q(APR 2019)} } = 2 \times \frac{145.68  }{100.24} \times \frac{1}{ (1.025)^{1/2}}$ -->
+<!-- $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | -->
+<!-- 1 OCT 2027 | $145.68 \times 1.025^{9}$ | $2 \times \frac{145.68  \times 1.025^{9}}{100.24}$ |  $2 \times \frac{145.68  \times 1.025^{9}}{100.24} \frac{\text{Q(APR 2018)}}{\text{Q(OCT 2027)} } = 2 \times \frac{145.68  }{100.24} \times \frac{1}{ (1.025)^{1/2}}$ -->
+<!-- 1 APR 2028 | $145.68 \times 1.025^{9.5}$ | $(100 + 2) \times \frac{145.68  \times 1.025^{9.5}}{100.24}$ |  $(100 + 2) \times \frac{145.68  \times 1.025^{9.5}}{100.24} \frac{\text{Q(APR 2018)}}{\text{Q(APR 2028)} } = (100 + 2) \times \frac{145.68  }{100.24} \times \frac{1}{ (1.025)^{1/2}}$ -->
+<!-- The present value at 1 APR 2018 of the real payments at the real yield $i'$ p.a. is -->
+<!-- $$ f(i') = -135 + 2 \times \frac{145.68  }{100.24} \times \frac{1}{ (1.025)^{1/2}} \times(2 a^{2(i')}_{\angl{10}}) + 100 \times \frac{145.68  }{100.24} \times \frac{1}{ (1.025)^{1/2}} \times \frac{1}{(1+i')^{10}} = 0.$$ -->
+<!-- We solve for $i'$, which results in  -->
+<!-- $$i' \approx 0.0481$$ per annum. -->
+<!--     2. Investment A yields the higher real rate of return than investment B, hence investment A is preferred.  -->
+<!-- 5. Investment A: The payment received in 5 years is -->
+<!-- $$50000(1.025)(1.035)(1.045)(1.055)(1.065) = A.$$ -->
+<!-- Hence, the real payment in terms of its purchasing power at 15 Jan 2013 is -->
+<!-- $$ A \times \frac{Q(\text{Jan 13})}{Q(\text{Jan 18})}.$$ -->
+<!-- Therefore, the real yield $i\%$ p.a. is -->
+<!-- $$50000 (1 + i')^5 = A \times \frac{Q(\text{Jan 13})}{Q(\text{Jan 18})} = A \times \frac{100}{114.83},$$ -->
+<!-- which gives $i' = 1.64\%.$ -->
+<!-- Investment B: First we find an annual income of the annuity. -->
+<!-- $$\text{Annual income } = \frac{50000}{a^{0.06}_{\angl{5}}} = 1.186982\times 10^{4}.$$ -->
+<!-- The real yield on investment B is the solution  -->
+<!-- $i'$ p.a. to the equation -->
+<!--     follows: -->
+<!--     $$50000 = \left( \frac{100}{104.17} v  + \frac{100}{110.17} v^2 +  \cdots + \frac{100}{114.83}v^5  \right)\times 1.186982\times 10^{4},$$ -->
+<!-- At $1.64\%$, the RHS of the above equation is equal to the price of B at $1.64\% = 51,217.65 .$ -->
+<!-- Therefore, the real yield of B is greater than 1.64\%. Hence B gives greater real yield. -->
+<!-- ## Solutions to Tutorial 8 -->
+<!-- 1. Let $i'$% be the real rate of return (yield) per annum earned on this investment. It follows that -->
+<!-- $$(1 + i')^3 = (1.025)(1.035)(1.045)\frac{100}{108.83} = 0.00618.$$ -->
+<!-- 2. The drift rate is $(0.24)(4) = 1$ per year and the variance rate is $(9)(4) = 36$ per year. -->
+<!-- At the end of 6 months, the probability distribution of the cash position is normally distributed with mean  -->
+<!-- $$35 + 1(\frac{1}{2}) = 35.5$$ -->
+<!-- and variance -->
+<!-- $$36(\frac{1}{2}) = 18.$$ -->
+<!-- Therefore, the expected cash position at the end of 6 months is 35.5. -->
+<!-- 3. The estimates of the standard deviation of the \textbf{daily returns} are given by -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!--    s &= \sqrt{\frac{1}{n-1} \sum_{i=1}^n (u_i - \bar{u})^2 } \\ -->
+<!--        &= \sqrt{\frac{1}{n-1} \sum_{i=1}^n    u_i^2 - \frac{1}{n(n-1)}  \left(\sum_{i=1}^n u_i  \right)^2 } \\ -->
+<!--        &= \sqrt{\frac{1}{62-1}(0.0042) - \frac{1}{62(62-1)}(0.25)   } \\ -->
+<!--        &= 0.0072337. -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- Because we are using observations at intervals of $\tau$ measured in years, the estimate of the \textbf{annualised volatility} is given by -->
+<!-- $$ \hat{\sigma} = \frac{s}{\sqrt{\tau}}.= \sqrt{252}s = 0.1148319 = 11.48\%.$$ -->
+<!-- 4. The \textbf{standard error of this estimate} is approximately $$\hat{\sigma}/\sqrt{2n} = \frac{0.1148319}{\sqrt{2(62)}} = 0.0103122 = 1.03\%.$$ -->
+<!-- 5. Recall that the drift rate is $(0.24)(4) = 1$ per year and the variance rate is $(9)(4) = 36$ per year. It follows that -->
+<!-- $$X(1) \sim N(X(0) + 1, 36) = (X(0) + 1) + 6N(0,1),$$ -->
+<!-- where $X(0)$ is the company's initial cash position. -->
+<!-- The company's initial cash position so that the company has a less than 5% chance of a negative cash position by the end of 1 year satisfies -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- \Pr((X(0) + 1) + 6Z < 0) &= 0.05 \\ -->
+<!-- \Pr( Z < \frac{-(X(0) + 1)}{6}) &= 0.05 \\ -->
+<!-- \frac{X(0) + 1}{6} = 1.645, -->
+<!-- \end{aligned}$$ -->
+<!-- where $Z \sim N(0,1)$. -->
+<!-- This implies that $X(0) = 8.87.$ -->
+<!-- 7. Following that the proportional return on stocks are normally distributed, the discrete-time version of the model is $$\begin{aligned}  -->
+<!--    \frac{\Delta S}{S} &= \mu \Delta t + \sigma \sqrt{\Delta t} \epsilon  -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- where $\epsilon$ has a standard normal distribution. Hence,  -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- S_t &= S_{t-1} + \Delta S \\ -->
+<!-- &= S_{t-1} + S_{t-1}(\mu \Delta t + \sigma \sqrt{\Delta t} -->
+<!-- \epsilon)\\ -->
+<!-- &= S_{t-1}\cdot(1+\mu \Delta t + \sigma \sqrt{\Delta t} -->
+<!-- \epsilon) -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- where in this case $\Delta t = 1/12, \mu = 0.08$ and $\sigma = 0.3$.  -->
+<!-- The simulated values of the stock price path at time 3 months are shown in the following table. -->
+<!-- Time (t) | $S_t$ -->
+<!-- :-: | :-: |  -->
+<!-- $\Delta t$ | $40(1 + (0.08)(1/12) + (0.3) \sqrt{(1/12)} (0.62)) = 42.414$ -->
+<!-- $2\Delta t$ | $42.414(1 + (0.08)(1/12) + (0.3) \sqrt{(1/12)} (1.34)) = 47.619$ -->
+<!-- $3\Delta t$ | $42.414(1 + (0.08)(1/12) + (0.3) \sqrt{(1/12)} (-0.76)) = 44.803$ -->
+<!-- 8. The questions are similar to the previous tutorial. Only answers are given here. -->
+<!--     1. CPI(OCT 2015) = 96. -->
+<!--     2. -->
+<!-- Date | (Monetary) Payment | -->
+<!-- :-: | :-: |  -->
+<!-- Jul 2016 | $\frac{2\%}{2}\frac{\text{Q(Date - 3/12)}}{\text{Q(Jan 16 - 3/12)}} = 1.03125 = M_1$  -->
+<!-- Jan 2017 | $\frac{2\%}{2}\frac{\text{Q(Oct 16)}}{\text{Q(Oct 15)}} = 1.0625 = M_2$  -->
+<!-- Jul 2017 | $\frac{2\%}{2}\frac{\text{Q(Apr 17)}}{\text{Q(Oct 15)}} = 1.09375 = M_3$  -->
+<!-- Jan 2018 | $(100+1)\frac{\text{Q(Oct 17)}}{\text{Q(Oct 15)}} = 116.7812= M_4$  -->
+<!--     3. -->
+<!-- Date | Real Payment $=$ Monetary Payment $\times \frac{\text{Q(Jan 16)}}{\text{Q(Date)}}$ | -->
+<!-- :-: | :-: |  -->
+<!-- Jul 2016 | $1.03125\frac{97}{100} = 1.0003125$  -->
+<!-- Jan 2017 | $1.0625\frac{97}{104} = 0.9909856$   -->
+<!-- Jul 2017 | $1.09375\frac{97}{109} = 0.9733372$   -->
+<!-- Jan 2018 | $116.7812\frac{97}{112} = 101.1408607$     -->
+<!--     4. The purchase price of the bond per 100 THB nominal if the investor obtained a real redemption yield of 0.79% p.a. effective on the bond satisfies -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- P &= \frac{1.0003125}{(1+0.0079)^{1/2}} + \frac{0.9909856}{(1+0.0079)^{2/2}} + \frac{0.9733372}{(1+0.0079)^{3/2}} + \frac{101.1408607}{(1+0.0079)^{4/2}}\\  -->
+<!-- &= 102.50. -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="bonds-and-inflation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="solutions-to-tutorials.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-Tutorials.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/pairote-sat/SCMA266/blob/master/02-Tutorials.Rmd",
+"text": null
+},
+"download": ["SCMA266Bookdownproj.pdf", "SCMA266Bookdownproj.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

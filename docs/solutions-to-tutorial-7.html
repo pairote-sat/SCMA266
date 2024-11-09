@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 16 Solutions to Tutorial 7 | SCMA266 Theory of Interest</title>
+  <meta name="description" content="Chapter 16 Solutions to Tutorial 7 | SCMA266 Theory of Interest" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 16 Solutions to Tutorial 7 | SCMA266 Theory of Interest" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 16 Solutions to Tutorial 7 | SCMA266 Theory of Interest" />
+  
+  
+  
+
+<meta name="author" content="Pairote Satiracoo" />
+
+
+<meta name="date" content="2024-11-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="tutorial-7.html"/>
+<link rel="next" href="tutorial-8.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">SCMA266 Theory of Interest</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Cashflows, Interest and the Time Value of Money</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#introduction-to-financial-modelling"><i class="fa fa-check"></i><b>1.1</b> Introduction to Financial Modelling</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#cashflows"><i class="fa fa-check"></i><b>1.2</b> Cashflows</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#interest-and-the-time-value-of-money"><i class="fa fa-check"></i><b>1.3</b> Interest and the Time Value of Money</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#simple-interest"><i class="fa fa-check"></i><b>1.3.1</b> Simple interest</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#compound-interest"><i class="fa fa-check"></i><b>1.3.2</b> Compound interest</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#frequency-of-compounding"><i class="fa fa-check"></i><b>1.4</b> Frequency of Compounding</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#effective-rate-of-interest"><i class="fa fa-check"></i><b>1.4.1</b> Effective rate of interest</a></li>
+<li class="chapter" data-level="1.4.2" data-path="index.html"><a href="index.html#compounding-over-any-number-of-time-units"><i class="fa fa-check"></i><b>1.4.2</b> Compounding over any number of time units</a></li>
+<li class="chapter" data-level="1.4.3" data-path="index.html"><a href="index.html#changing-the-time-period-of-the-effective-rates-of-interest"><i class="fa fa-check"></i><b>1.4.3</b> Changing the time period of the effective rates of interest</a></li>
+<li class="chapter" data-level="1.4.4" data-path="index.html"><a href="index.html#non-constant-interest-rates"><i class="fa fa-check"></i><b>1.4.4</b> Non-constant interest rates</a></li>
+<li class="chapter" data-level="1.4.5" data-path="index.html"><a href="index.html#accumulation-factors"><i class="fa fa-check"></i><b>1.4.5</b> Accumulation factors</a></li>
+<li class="chapter" data-level="1.4.6" data-path="index.html"><a href="index.html#present-values-and-discount-factors"><i class="fa fa-check"></i><b>1.4.6</b> Present values and discount factors</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#cashflows-and-annuities"><i class="fa fa-check"></i><b>1.5</b> Cashflows and Annuities</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="index.html"><a href="index.html#level-annuities-certain"><i class="fa fa-check"></i><b>1.5.1</b> Level Annuities certain</a></li>
+<li class="chapter" data-level="1.5.2" data-path="index.html"><a href="index.html#level-annuities-due"><i class="fa fa-check"></i><b>1.5.2</b> Level Annuities Due</a></li>
+<li class="chapter" data-level="1.5.3" data-path="index.html"><a href="index.html#deferred-annuities"><i class="fa fa-check"></i><b>1.5.3</b> Deferred annuities</a></li>
+<li class="chapter" data-level="1.5.4" data-path="index.html"><a href="index.html#increasing-annuities"><i class="fa fa-check"></i><b>1.5.4</b> Increasing annuities</a></li>
+<li class="chapter" data-level="1.5.5" data-path="index.html"><a href="index.html#compound-increasing-annuities"><i class="fa fa-check"></i><b>1.5.5</b> Compound increasing annuities</a></li>
+<li class="chapter" data-level="1.5.6" data-path="index.html"><a href="index.html#annuities-payable-more-than-once-per-time-unit"><i class="fa fa-check"></i><b>1.5.6</b> Annuities payable more than once per time unit</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#nominal-rates-of-interest"><i class="fa fa-check"></i><b>1.6</b> Nominal Rates of Interest</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="index.html"><a href="index.html#nominal-rates-of-discount"><i class="fa fa-check"></i><b>1.6.1</b> Nominal Rates of Discount</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#principle-of-equivalence-yields-and-equation-of-value"><i class="fa fa-check"></i><b>1.7</b> Principle of Equivalence, Yields and Equation of Value</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="index.html"><a href="index.html#equation-of-value-and-yields"><i class="fa fa-check"></i><b>1.7.1</b> Equation of value and yields</a></li>
+<li class="chapter" data-level="1.7.2" data-path="index.html"><a href="index.html#the-method-to-estimate-the-yield"><i class="fa fa-check"></i><b>1.7.2</b> The method to estimate the yield</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#loan-schedules"><i class="fa fa-check"></i><b>1.8</b> Loan schedules</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#repay-as-late-as-possible"><i class="fa fa-check"></i>Repay as late as possible:</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#repay-interest-only-during-the-term-and-repay-the-capital-at-the-end-of-the-term"><i class="fa fa-check"></i>Repay interest only during the term and repay the capital at the end of the term:</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#repay-loan-by-regular-instalments-of-interest-and-capital-throughout-term-of-loan"><i class="fa fa-check"></i>Repay loan by regular instalments of interest and capital throughout term of loan:</a></li>
+<li class="chapter" data-level="1.8.1" data-path="index.html"><a href="index.html#the-loan-schedule"><i class="fa fa-check"></i><b>1.8.1</b> The loan schedule</a></li>
+<li class="chapter" data-level="1.8.2" data-path="index.html"><a href="index.html#changing-the-term-of-a-loan"><i class="fa fa-check"></i><b>1.8.2</b> Changing the term of a loan</a></li>
+<li class="chapter" data-level="1.8.3" data-path="index.html"><a href="index.html#changing-the-interest-rate"><i class="fa fa-check"></i><b>1.8.3</b> Changing the interest rate</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html"><i class="fa fa-check"></i><b>2</b> Bonds and Inflation</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#introduction-to-thai-financial-system"><i class="fa fa-check"></i><b>2.1</b> Introduction to Thai Financial System</a></li>
+<li class="chapter" data-level="2.2" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#bonds"><i class="fa fa-check"></i><b>2.2</b> Bonds</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#characteristics-of-bonds"><i class="fa fa-check"></i><b>2.2.1</b> Characteristics of Bonds</a></li>
+<li class="chapter" data-level="2.2.2" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#examples-of-bonds"><i class="fa fa-check"></i><b>2.2.2</b> Examples of Bonds</a></li>
+<li class="chapter" data-level="2.2.3" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#bond-prices"><i class="fa fa-check"></i><b>2.2.3</b> Bond prices</a></li>
+<li class="chapter" data-level="2.2.4" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#no-tax"><i class="fa fa-check"></i><b>2.2.4</b> No tax</a></li>
+<li class="chapter" data-level="2.2.5" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#income-tax"><i class="fa fa-check"></i><b>2.2.5</b> Income tax</a></li>
+<li class="chapter" data-level="2.2.6" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#capital-gains-tax-cgt"><i class="fa fa-check"></i><b>2.2.6</b> Capital gains tax (CGT)</a></li>
+<li class="chapter" data-level="2.2.7" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#capital-gains-test"><i class="fa fa-check"></i><b>2.2.7</b> Capital Gains Test</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#inflation"><i class="fa fa-check"></i><b>2.3</b> Inflation</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#real-rates-of-interest"><i class="fa fa-check"></i><b>2.3.1</b> Real rates of interest</a></li>
+<li class="chapter" data-level="2.3.2" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#real-yields"><i class="fa fa-check"></i><b>2.3.2</b> Real yields</a></li>
+<li class="chapter" data-level="2.3.3" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#calculating-real-yields-given-constant-inflation-assumptions"><i class="fa fa-check"></i><b>2.3.3</b> Calculating real yields given constant inflation assumptions</a></li>
+<li class="chapter" data-level="2.3.4" data-path="bonds-and-inflation.html"><a href="bonds-and-inflation.html#index-linked-securities"><i class="fa fa-check"></i><b>2.3.4</b> Index-linked securities</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tutorial-1.html"><a href="tutorial-1.html"><i class="fa fa-check"></i><b>3</b> Tutorial 1</a></li>
+<li class="chapter" data-level="4" data-path="tutorial-2.html"><a href="tutorial-2.html"><i class="fa fa-check"></i><b>4</b> Tutorial 2</a></li>
+<li class="chapter" data-level="5" data-path="tutorial-3.html"><a href="tutorial-3.html"><i class="fa fa-check"></i><b>5</b> Tutorial 3</a></li>
+<li class="chapter" data-level="6" data-path="tutorial-4.html"><a href="tutorial-4.html"><i class="fa fa-check"></i><b>6</b> Tutorial 4</a></li>
+<li class="chapter" data-level="7" data-path="tutorial-5.html"><a href="tutorial-5.html"><i class="fa fa-check"></i><b>7</b> Tutorial 5</a></li>
+<li class="chapter" data-level="8" data-path="solutions-to-tutorial-1.html"><a href="solutions-to-tutorial-1.html"><i class="fa fa-check"></i><b>8</b> Solutions to Tutorial 1</a></li>
+<li class="chapter" data-level="9" data-path="solutions-to-tutorial-2.html"><a href="solutions-to-tutorial-2.html"><i class="fa fa-check"></i><b>9</b> Solutions to Tutorial 2</a></li>
+<li class="chapter" data-level="10" data-path="solutions-to-tutorial-3.html"><a href="solutions-to-tutorial-3.html"><i class="fa fa-check"></i><b>10</b> Solutions to Tutorial 3</a></li>
+<li class="chapter" data-level="11" data-path="solutions-to-tutorial-4.html"><a href="solutions-to-tutorial-4.html"><i class="fa fa-check"></i><b>11</b> Solutions to Tutorial 4</a></li>
+<li class="chapter" data-level="12" data-path="solutions-to-tutorial-5.html"><a href="solutions-to-tutorial-5.html"><i class="fa fa-check"></i><b>12</b> Solutions to Tutorial 5</a></li>
+<li class="chapter" data-level="13" data-path="tutorial-6.html"><a href="tutorial-6.html"><i class="fa fa-check"></i><b>13</b> Tutorial 6</a></li>
+<li class="chapter" data-level="14" data-path="solutions-to-tutorial-6.html"><a href="solutions-to-tutorial-6.html"><i class="fa fa-check"></i><b>14</b> Solutions to Tutorial 6</a></li>
+<li class="chapter" data-level="15" data-path="tutorial-7.html"><a href="tutorial-7.html"><i class="fa fa-check"></i><b>15</b> Tutorial 7</a></li>
+<li class="chapter" data-level="16" data-path="solutions-to-tutorial-7.html"><a href="solutions-to-tutorial-7.html"><i class="fa fa-check"></i><b>16</b> Solutions to Tutorial 7</a></li>
+<li class="chapter" data-level="17" data-path="tutorial-8.html"><a href="tutorial-8.html"><i class="fa fa-check"></i><b>17</b> Tutorial 8</a></li>
+<li class="chapter" data-level="18" data-path="solutions-to-tutorial-8.html"><a href="solutions-to-tutorial-8.html"><i class="fa fa-check"></i><b>18</b> Solutions to Tutorial 8</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">SCMA266 Theory of Interest</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="solutions-to-tutorial-7" class="section level1 hasAnchor" number="16">
+<h1><span class="header-section-number">Chapter 16</span> Solutions to Tutorial 7<a href="solutions-to-tutorial-7.html#solutions-to-tutorial-7" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<ol style="list-style-type: decimal">
+<li>The timeline of the transaction is given in the following table.</li>
+</ol>
+<table style="width:100%;">
+<colgroup>
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Time</th>
+<th align="center">0</th>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Year</td>
+<td align="center">2012</td>
+<td align="center">2013</td>
+<td align="center">2014</td>
+<td align="center">2015</td>
+<td align="center">2016</td>
+<td align="center">2017</td>
+</tr>
+<tr class="even">
+<td align="center">Cashflow</td>
+<td align="center">-100</td>
+<td align="center">8</td>
+<td align="center">8</td>
+<td align="center">8</td>
+<td align="center">8</td>
+<td align="center">18 + 100</td>
+</tr>
+<tr class="odd">
+<td align="center">CPI</td>
+<td align="center">97.22</td>
+<td align="center">99.17</td>
+<td align="center">101.32</td>
+<td align="center">100.25</td>
+<td align="center">100.36</td>
+<td align="center">100.53</td>
+</tr>
+<tr class="even">
+<td align="center">Real value of cashflow at <span class="math inline">\(t = 0\)</span></td>
+<td align="center">-100</td>
+<td align="center"><span class="math inline">\(\frac{(8)(97.22)}{99.17}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{(8)(97.22)}{101.32}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{(8)(97.22)}{100.25}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{(8)(97.22)}{100.36}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{(8)(97.22)}{100.53}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center">Real value of cashflow at <span class="math inline">\(t = 0\)</span></td>
+<td align="center">-100</td>
+<td align="center">= 7.84</td>
+<td align="center">= 7.68</td>
+<td align="center">= 7.76</td>
+<td align="center">= 7.75</td>
+<td align="center">= 114.11</td>
+</tr>
+</tbody>
+</table>
+<p>The real yield <span class="math inline">\(i&#39;\)</span> p.a. effective solve the equation of value as
+follows:
+<span class="math display">\[f(i&#39;) = -100 + 7.84 v  + 7.68v^2 + 7.76v^3 + 7.75v^4 + 114.11v^5 = 0,\]</span>
+where <span class="math inline">\(v = 1/(1 + i&#39;)\)</span>.<br />
+This gives <span class="math inline">\(i&#39; \approx 8.82\%\)</span>.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>We know that when the annual rate of inflation is constant and equal to <span class="math inline">\(q\)</span>, the real yield <span class="math inline">\(i&#39;\)</span> and the monetary yield <span class="math inline">\(i\)</span> satisfies <span class="math display">\[(1 +i) = ( 1 + q)(1+i&#39;).\]</span></p>
+<ol style="list-style-type: decimal">
+<li>Given</li>
+</ol></li>
+</ol>
+<p><span class="math inline">\(i =0.06\)</span> and <span class="math inline">\(q = 0.025\)</span>, we have
+<span class="math display">\[ i&#39; = \frac{1.06}{1.025} - 1 = 0.0341463 = 3.4146341\%.\]</span>
+2. Given</p>
+<p><span class="math inline">\(i =0.06\)</span> and <span class="math inline">\(i&#39; = 0.0425\)</span>, we have
+<span class="math display">\[ i&#39; = \frac{1.06}{1.0425} - 1 = 0.0167866 = 1.6786571\%.\]</span></p>
+<pre><code>3. Given </code></pre>
+<p><span class="math inline">\(q = 0.03\)</span> p.a. for 9 months and <span class="math inline">\(q = 0.0325\)</span> p.a. for the next 3 months,
+<span class="math display">\[ i&#39; = \frac{1.06}{(1.03)^{9/12}(1.0325)^{3/12}} - 1 = 0.0285027 = 2.8502689\%.\]</span></p>
+<ol start="3" style="list-style-type: decimal">
+<li>The timeline of the transaction is given in the following table.</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Time</th>
+<th align="center">0</th>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Year</td>
+<td align="center">2015</td>
+<td align="center">2016</td>
+<td align="center">2017</td>
+<td align="center">2018</td>
+</tr>
+<tr class="even">
+<td align="center">Cashflow</td>
+<td align="center">-95</td>
+<td align="center">6</td>
+<td align="center">6</td>
+<td align="center">106</td>
+</tr>
+<tr class="odd">
+<td align="center">Real value of cashflow at <span class="math inline">\(t = 0\)</span></td>
+<td align="center">-95</td>
+<td align="center">5.81</td>
+<td align="center">5.41</td>
+<td align="center">88.70</td>
+</tr>
+</tbody>
+</table>
+<pre><code>1. The equation of value is</code></pre>
+<p><span class="math display">\[ f(i) = -95 + 6 a^i_{\angl{3}} + \frac{100}{(1+i)^3}  = 0.\]</span></p>
+<p>This gives <span class="math inline">\(i \approx 7.938\%\)</span>.</p>
+<pre><code>2. The real yield </code></pre>
+<p><span class="math inline">\(i&#39;\)</span> p.a. effective solve the equation of value as
+follows:
+<span class="math display">\[f(i&#39;) = -95 + 5.81 v  + 5.41v^2 + 88.70v^3  = 0,\]</span>
+where <span class="math inline">\(v = 1/(1 + i&#39;)\)</span>.<br />
+This gives <span class="math inline">\(i&#39; \approx 1.80\%\)</span>.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Question 4 is not examinable.</li>
+</ol>
+<p>Investment A:</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Date</th>
+<th align="center">Real payment (monetary payment <span class="math inline">\(\times \frac{\text{Q(APR 2018)}}{\text{Q(Date)}}\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1 APR 2018</td>
+<td align="center"><span class="math inline">\(-110\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">1 OCT 2018</td>
+<td align="center"><span class="math inline">\(4.5 \times \frac{\text{Q(APR 2018)}}{\text{Q(OCT 2018)} } = 4.5 \times \frac{\text{Q(APR 2018)}}{\text{Q(APR 2018)} \times (1.025)^{1/2}} = 4.5 \times \frac{1}{ (1.025)^{1/2}}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center">1 APR 2019</td>
+<td align="center"><span class="math inline">\(4.5 \times \frac{\text{Q(APR 2018)}}{\text{Q(APR 2019)} } = 4.5 \times \frac{\text{Q(APR 2018)}}{\text{Q(APR 2018)} \times (1.025)^{1}} = 4.5 \times \frac{1}{ (1.025)^{1}}\)</span> <span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">1 APR 2028</td>
+<td align="center"><span class="math inline">\((100 + 4.5) \times \frac{\text{Q(APR 2018)}}{\text{Q(APR 2028)} } = (100 + 4.5) \times \frac{\text{Q(APR 2018)}}{\text{Q(APR 2018)} \times (1.025)^{10}} = (100 + 4.5) \times \frac{1}{ (1.025)^{10}}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The real yield <span class="math inline">\(i&#39;\)</span> p.a. effective solve the equation of value as
+follows:
+<span class="math display">\[f(i&#39;) = -110 +  4.5\left( \frac{1}{((1+i&#39;)(1.025))^{1/2}} + \frac{1}{((1+i&#39;)(1.025))^{1}}  + \cdots + \frac{1}{((1+i&#39;)(1.025))^{10}}\right)= 0,\]</span>
+Letting <span class="math inline">\((1+ j) = ((1+i&#39;)(1.025))^{1/2}\)</span> gives the equation in terms of <span class="math inline">\(j\)</span> as follows:</p>
+<p><span class="math display">\[ f(j) = -110 + 4.5 a^j_{\angl{20}} + \frac{100}{(1+j)^{20}}  = 0.\]</span>
+By linear approximation, we obtain
+<span class="math display">\[j \approx 0.0378\]</span>
+and the real yield per annum is
+<span class="math display">\[i&#39; \approx 0.0507.\]</span></p>
+<p>Investment B:</p>
+<p>The coupon payment is 2 THB increased with inflation, paid every 6 months and the redemption payment is 100 THB also increased with inflation.</p>
+<p>We first increase the payments with inflation approximately lagged by 6 months to see how much is acually paid, which gives nominal payments and then calculate their real values in terms of their purchasing power at 1 APR 2018.</p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Date</th>
+<th align="center">CPI (Date <span class="math inline">\(-\)</span> 6/12)</th>
+<th align="center">Nominal payment at Date</th>
+<th align="center">Real payment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1 OCT 2018</td>
+<td align="center"><span class="math inline">\(145.68\)</span></td>
+<td align="center"><span class="math inline">\(2 \times \frac{145.68}{100.24}\)</span></td>
+<td align="center"><span class="math inline">\(2 \times \frac{145.68}{100.24} \frac{\text{Q(APR 2018)}}{\text{Q(OCT 2018)} } = 2 \times \frac{145.68}{100.24} \times \frac{1}{ (1.025)^{1/2}}\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">1 APR 2019</td>
+<td align="center"><span class="math inline">\(145.68 \times 1.025^{1/2}\)</span></td>
+<td align="center"><span class="math inline">\(2 \times \frac{145.68  \times 1.025^{1/2}}{100.24}\)</span></td>
+<td align="center"><span class="math inline">\(2 \times \frac{145.68  \times 1.025^{1/2}}{100.24} \frac{\text{Q(APR 2018)}}{\text{Q(APR 2019)} } = 2 \times \frac{145.68  }{100.24} \times \frac{1}{ (1.025)^{1/2}}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">1 OCT 2027</td>
+<td align="center"><span class="math inline">\(145.68 \times 1.025^{9}\)</span></td>
+<td align="center"><span class="math inline">\(2 \times \frac{145.68  \times 1.025^{9}}{100.24}\)</span></td>
+<td align="center"><span class="math inline">\(2 \times \frac{145.68  \times 1.025^{9}}{100.24} \frac{\text{Q(APR 2018)}}{\text{Q(OCT 2027)} } = 2 \times \frac{145.68  }{100.24} \times \frac{1}{ (1.025)^{1/2}}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center">1 APR 2028</td>
+<td align="center"><span class="math inline">\(145.68 \times 1.025^{9.5}\)</span></td>
+<td align="center"><span class="math inline">\((100 + 2) \times \frac{145.68  \times 1.025^{9.5}}{100.24}\)</span></td>
+<td align="center"><span class="math inline">\((100 + 2) \times \frac{145.68  \times 1.025^{9.5}}{100.24} \frac{\text{Q(APR 2018)}}{\text{Q(APR 2028)} } = (100 + 2) \times \frac{145.68  }{100.24} \times \frac{1}{ (1.025)^{1/2}}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The present value at 1 APR 2018 of the real payments at the real yield <span class="math inline">\(i&#39;\)</span> p.a. is
+<span class="math display">\[ f(i&#39;) = -135 + 2 \times \frac{145.68  }{100.24} \times \frac{1}{ (1.025)^{1/2}} \times(2 a^{2(i&#39;)}_{\angl{10}}) + 100 \times \frac{145.68  }{100.24} \times \frac{1}{ (1.025)^{1/2}} \times \frac{1}{(1+i&#39;)^{10}} = 0.\]</span>
+We solve for <span class="math inline">\(i&#39;\)</span>, which results in
+<span class="math display">\[i&#39; \approx 0.0481\]</span> per annum.</p>
+<pre><code>2. Investment A yields the higher real rate of return than investment B, hence investment A is preferred. </code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li>Investment A: The payment received in 5 years is
+<span class="math display">\[50000(1.025)(1.035)(1.045)(1.055)(1.065) = A.\]</span>
+Hence, the real payment in terms of its purchasing power at 15 Jan 2013 is
+<span class="math display">\[ A \times \frac{Q(\text{Jan 13})}{Q(\text{Jan 18})}.\]</span></li>
+</ol>
+<p>Therefore, the real yield <span class="math inline">\(i\%\)</span> p.a. is
+<span class="math display">\[50000 (1 + i&#39;)^5 = A \times \frac{Q(\text{Jan 13})}{Q(\text{Jan 18})} = A \times \frac{100}{114.83},\]</span>
+which gives <span class="math inline">\(i&#39; = 1.64\%.\)</span></p>
+<p>Investment B: First we find an annual income of the annuity.
+<span class="math display">\[\text{Annual income } = \frac{50000}{a^{0.06}_{\angl{5}}} = 1.186982\times 10^{4}.\]</span></p>
+<p>The real yield on investment B is the solution
+<span class="math inline">\(i&#39;\)</span> p.a. to the equation
+follows:
+<span class="math display">\[50000 = \left( \frac{100}{104.17} v  + \frac{100}{110.17} v^2 +  \cdots + \frac{100}{114.83}v^5  \right)\times 1.186982\times 10^{4},\]</span>
+At <span class="math inline">\(1.64\%\)</span>, the RHS of the above equation is equal to the price of B at <span class="math inline">\(1.64\% = 51,217.65 .\)</span></p>
+<p>Therefore, the real yield of B is greater than 1.64%. Hence B gives greater real yield.</p>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="tutorial-7.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tutorial-8.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-Tutorials.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/pairote-sat/SCMA266/blob/master/02-Tutorials.Rmd",
+"text": null
+},
+"download": ["SCMA266Bookdownproj.pdf", "SCMA266Bookdownproj.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
